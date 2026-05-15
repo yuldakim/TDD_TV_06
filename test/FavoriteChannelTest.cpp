@@ -51,3 +51,36 @@ TEST_F(FavoriteChannelTest, S2_2_ToggleFavoriteRemoveIfExisted) {
   // 4. Then: 목록이 다시 비어있어야 함!
   EXPECT_EQ(0, controller->getFavorites().size());
 }
+
+TEST_F(FavoriteChannelTest, S2_3_ComplexSequenceTest) {
+  // 1. 12번 추가
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 2. 8번 추가
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("8"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 3. 37번 추가
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("37"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 4. 8번 다시 눌러서 삭제 (토글)
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("8"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 5. 6번 추가
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 최종 검증
+  std::vector<int> favs = controller->getFavorites();
+
+  // 개수는 3개여야 함
+  ASSERT_EQ(3, favs.size());
+
+  // 명세: 항상 정렬 유지 -> {6, 12, 37} 순서여야 함
+  EXPECT_EQ(6, favs[0]);
+  EXPECT_EQ(12, favs[1]);
+  EXPECT_EQ(37, favs[2]);
+}
