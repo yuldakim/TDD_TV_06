@@ -1,0 +1,10 @@
+{
+"editor.formatOnSave": true,
+"editor.tabSize": 4,
+"C_Cpp.default.cppStandard": "c++17",
+"cmake.buildDirectory":
+"VSCODE_WORKSPACE/build",
+"clangd.arguments": [
+"--header-insertion=never"
+]
+}

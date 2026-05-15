@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/DEV_BR/TDD_TV_06/build/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
