@@ -24,15 +24,11 @@ TEST(TVControllerTest, Press1AndConfirmShouldChangeToChannel1) {
 TEST(TVControllerTest, PressMultipleDigitsAndConfirmShouldChangeChannel) {
   MockTunerForController mockTuner;
 
-  // 1. 기대 정의: '1' 누르고 '2' 누르고 'OK' 누르면 -> setCH("12")가 호출되어야
-  // 함!
   EXPECT_CALL(mockTuner, setCH("12")).Times(1);
 
   TVController controller(&mockTuner);
 
-  // 2. 실행
   controller.pushButton(remoteKey::KEY_1);
-  // 아직 KEY_2가 없으니 일단 KEY_1을 한 번 더 눌러 "11"을 만드는 테스트
-  controller.pushButton(remoteKey::KEY_1);
+  controller.pushButton(remoteKey::KEY_2);
   controller.pushButton(remoteKey::KEY_OK);
 }

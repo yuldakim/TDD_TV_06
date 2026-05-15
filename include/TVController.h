@@ -16,7 +16,6 @@
 #include <iostream>
 #include <string>
 
-
 class TVController {
 private:
   Tuner *tuner;
@@ -35,6 +34,7 @@ public:
   void pushButton(remoteKey key) {
     switch (key) {
     case remoteKey::KEY_1:
+    case remoteKey::KEY_2:
       processingCH += to_string(key);
       break;
     case remoteKey::KEY_OK:
