@@ -13,7 +13,7 @@
 
 #include <string>
 
-enum class remoteKey { KEY_1, KEY_2, KEY_OK };
+enum class remoteKey { KEY_1, KEY_2, KEY_3, KEY_4, KEY_OK };
 
 inline std::string to_string(remoteKey key) {
   switch (key) {
@@ -21,6 +21,10 @@ inline std::string to_string(remoteKey key) {
     return "1";
   case remoteKey::KEY_2:
     return "2";
+  case remoteKey::KEY_3:
+    return "3";
+  case remoteKey::KEY_4:
+    return "4";
   case remoteKey::KEY_OK:
     return "OK";
   }

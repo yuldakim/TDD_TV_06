@@ -38,13 +38,13 @@ TEST(TVControllerTest, S1_3_ContinuousInput) {
 
   // 기대 정의: "12"와 "11"이 각각 한 번씩 호출되면 통과!
   EXPECT_CALL(mockTuner, setCH("12")).Times(1);
-  EXPECT_CALL(mockTuner, setCH("11")).Times(1);
+  EXPECT_CALL(mockTuner, setCH("34")).Times(1);
 
   TVController controller(&mockTuner);
 
   controller.pushButton(remoteKey::KEY_1);
   controller.pushButton(remoteKey::KEY_2);
 
-  controller.pushButton(remoteKey::KEY_1);
-  controller.pushButton(remoteKey::KEY_1);
+  controller.pushButton(remoteKey::KEY_3);
+  controller.pushButton(remoteKey::KEY_4);
 }

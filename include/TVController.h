@@ -35,10 +35,18 @@ public:
     switch (key) {
     case remoteKey::KEY_1:
     case remoteKey::KEY_2:
+    case remoteKey::KEY_3:
+    case remoteKey::KEY_4:
       processingCH += to_string(key);
+
+      if (processingCH.length() == 2) {
+        setTunerCh();
+        processingCH = ""; // 다음 34를 받기 위해 비워줌
+      }
       break;
     case remoteKey::KEY_OK:
       setTunerCh();
+      processingCH = "";
       break;
     }
   }
