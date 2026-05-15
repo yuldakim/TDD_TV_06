@@ -7,9 +7,9 @@
       "tests": 1,
       "testsuite": [
         {
-          "name": "testFramework",
+          "name": "Press1AndConfirmShouldChangeToChannel1",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 13
+          "line": 14
         }
       ]
     }
