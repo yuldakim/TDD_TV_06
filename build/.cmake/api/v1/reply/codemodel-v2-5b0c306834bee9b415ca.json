@@ -22,7 +22,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -48,7 +49,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-72da2ed566175265a508.json",
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-54caf08f5211cdce657b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -58,14 +59,14 @@
 					"source" : "build/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
 					"build" : "_deps/googletest-build/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-fe216759af740504fdac.json",
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-1970cbc60faca2f9c19d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -75,8 +76,8 @@
 					"source" : "build/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -96,7 +97,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -124,8 +126,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
@@ -137,8 +139,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -146,15 +148,22 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "FavoriteChannelTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FavoriteChannelTest-Debug-1dd3b3cb61a2bd1df377.json",
+					"name" : "FavoriteChannelTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "TVControllerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TVControllerTest-Debug-102c176e4a8015c46018.json",
+					"jsonFile" : "target-TVControllerTest-Debug-c5e789dd6350029475d4.json",
 					"name" : "TVControllerTest",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TunerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TunerTest-Debug-9f8dd35122888b709394.json",
+					"jsonFile" : "target-TunerTest-Debug-f564f9ab53c3150a8545.json",
 					"name" : "TunerTest",
 					"projectIndex" : 0
 				},

@@ -24,7 +24,12 @@ target_link_libraries(TunerTest GTest::gtest_main GTest::gmock)
 add_executable(TVControllerTest test/TVControllerTest.cpp)
 target_link_libraries(TVControllerTest GTest::gtest_main GTest::gmock)
 
+add_executable(FavoriteChannelTest test/FavoriteChannelTest.cpp)
+target_link_libraries(FavoriteChannelTest GTest::gtest_main GTest::gmock)
+
+
 include(GoogleTest)
 
 gtest_discover_tests(TunerTest)
 gtest_discover_tests(TVControllerTest)
+gtest_discover_tests(FavoriteChannelTest)

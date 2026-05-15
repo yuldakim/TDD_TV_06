@@ -13,13 +13,17 @@
 
 #include "Tuner.h"
 #include "remoteKey.h"
+#include <algorithm> // 추가됨
 #include <iostream>
 #include <string>
+#include <vector> // 추가됨
 
 class TVController {
 private:
   Tuner *tuner;
   std::string processingCH;
+
+  std::vector<int> favorites;
 
   void setTunerCh() {
     // 로그는 테스트의 결과가 절대 아닙니다. 로그가 있는 것을 테스트로 간주하지
@@ -30,6 +34,7 @@ private:
 
 public:
   explicit TVController(Tuner *tuner) : tuner(tuner), processingCH("") {}
+  std::vector<int> getFavorites() const { return favorites; }
 
   void pushButton(remoteKey key) {
     switch (key) {
@@ -61,6 +66,12 @@ public:
     case remoteKey::KEY_MENU: // S1-4 대응: 다른 버튼이 눌리면
       processingCH = "";      // 입력 중이던 번호를 무효화(삭제)함
       break;
+    case remoteKey::KEY_FAV: {
+      int curr = std::stoi(tuner->getCurrentCH());
+      favorites.push_back(curr);
+      std::sort(favorites.begin(), favorites.end()); // 명세: 항상 정렬 유지
+      break;
+    }
     }
   }
 };

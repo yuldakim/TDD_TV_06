@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "FavoriteChannelTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "S2_1_AddCurrentChannelToFavorites",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "line": 28
+        }
+      ]
+    }
+  ]
+}

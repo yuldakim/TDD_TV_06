@@ -108,6 +108,14 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/typeinfo \
  C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
  C:/DEV_BR/TDD_TV_06/include/remoteKey.h \
+ C:/mingw64/include/c++/15.2.0/algorithm \
+ C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
+ C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/mingw64/include/c++/15.2.0/iostream \
  C:/mingw64/include/c++/15.2.0/ostream \
  C:/mingw64/include/c++/15.2.0/bits/ostream.h \
@@ -149,17 +157,14 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  C:/mingw64/include/c++/15.2.0/istream \
  C:/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ C:/mingw64/include/c++/15.2.0/vector \
+ C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
  C:/DEV_BR/TDD_TV_06/include/Tuner.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h \
- C:/mingw64/include/c++/15.2.0/algorithm \
- C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
- C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
- C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
- C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/mingw64/include/c++/15.2.0/functional \
  C:/mingw64/include/c++/15.2.0/bits/std_function.h \
  C:/mingw64/include/c++/15.2.0/unordered_map \
@@ -170,11 +175,6 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
  C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
- C:/mingw64/include/c++/15.2.0/vector \
- C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
  C:/mingw64/include/c++/15.2.0/array \
  C:/mingw64/include/c++/15.2.0/compare \
  C:/mingw64/include/c++/15.2.0/memory \
