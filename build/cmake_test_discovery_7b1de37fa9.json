@@ -1,15 +1,20 @@
 {
-  "tests": 1,
+  "tests": 2,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "FavoriteChannelTest",
-      "tests": 1,
+      "tests": 2,
       "testsuite": [
         {
           "name": "S2_1_AddCurrentChannelToFavorites",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 28
+          "line": 27
+        },
+        {
+          "name": "S2_2_ToggleFavoriteRemoveIfExisted",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "line": 40
         }
       ]
     }

@@ -1,3 +1,40 @@
-Start testing: May 15 17:27 대한민국 표준시
+Start testing: May 15 17:30 대한민국 표준시
 ----------------------------------------------------------
-End testing: May 15 17:27 대한민국 표준시
+20/20 Testing: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+20/20 Test: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" start time: May 15 17:30 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+C:\DEV_BR\TDD_TV_06\test\FavoriteChannelTest.cpp:52: Failure
+Expected equality of these values:
+  0
+  controller->getFavorites().size()
+    Which is: 2
+
+[  FAILED  ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" end time: May 15 17:30 대한민국 표준시
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 15 17:30 대한민국 표준시

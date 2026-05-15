@@ -12,4 +12,6 @@ ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12" 1 0.0202198
 ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4" 1 0.0235965
 ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5" 1 0.032182
 ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99" 1 0.0300919
+FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted 0 0
 ---
+FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
