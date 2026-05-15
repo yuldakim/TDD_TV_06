@@ -37,6 +37,11 @@ public:
     case remoteKey::KEY_2:
     case remoteKey::KEY_3:
     case remoteKey::KEY_4:
+    case remoteKey::KEY_5:
+    case remoteKey::KEY_6:
+    case remoteKey::KEY_7:
+    case remoteKey::KEY_8:
+    case remoteKey::KEY_9:
       processingCH += to_string(key);
 
       if (processingCH.length() == 2) {
@@ -45,8 +50,13 @@ public:
       }
       break;
     case remoteKey::KEY_OK:
-      setTunerCh();
-      processingCH = "";
+      if (!processingCH.empty()) {
+        setTunerCh();
+        processingCH = "";
+      }
+      break;
+    case remoteKey::KEY_MENU: // S1-4 대응: 다른 버튼이 눌리면
+      processingCH = "";      // 입력 중이던 번호를 무효화(삭제)함
       break;
     }
   }
