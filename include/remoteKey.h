@@ -30,6 +30,8 @@ enum class remoteKey {
 
 inline std::string to_string(remoteKey key) {
   switch (key) {
+  case remoteKey::KEY_0:
+    return "0";
   case remoteKey::KEY_1:
     return "1";
   case remoteKey::KEY_2:

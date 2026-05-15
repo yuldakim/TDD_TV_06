@@ -1,10 +1,10 @@
 {
-  "tests": 4,
+  "tests": 5,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TVControllerTest",
-      "tests": 4,
+      "tests": 5,
       "testsuite": [
         {
           "name": "Press1AndConfirmShouldChangeToChannel1",
@@ -25,6 +25,11 @@
           "name": "S1_4_OtherButtonShouldInvalidateInput",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
           "line": 52
+        },
+        {
+          "name": "S1_5_LeadingZeroShouldBeRemoved",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 72
         }
       ]
     }

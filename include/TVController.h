@@ -33,6 +33,7 @@ public:
 
   void pushButton(remoteKey key) {
     switch (key) {
+    case remoteKey::KEY_0:
     case remoteKey::KEY_1:
     case remoteKey::KEY_2:
     case remoteKey::KEY_3:

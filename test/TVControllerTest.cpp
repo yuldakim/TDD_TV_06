@@ -68,3 +68,16 @@ TEST(TVControllerTest, S1_4_OtherButtonShouldInvalidateInput) {
   // 확인을 위해 OK를 눌러도 아무 일 없어야 함 (이미 비워졌으니까)
   controller.pushButton(remoteKey::KEY_OK);
 }
+
+TEST(TVControllerTest, S1_5_LeadingZeroShouldBeRemoved) {
+  MockTunerForController mockTuner;
+
+  // 0, 7을 누르면 "07"이 아니라 "7"이 호출되어야 함 (명세 기반)
+  EXPECT_CALL(mockTuner, setCH("7")).Times(1);
+
+  TVController controller(&mockTuner);
+
+  // 0 입력 후 7 입력 -> 2자리가 찼으므로 자동 변경 발생
+  controller.pushButton(remoteKey::KEY_0);
+  controller.pushButton(remoteKey::KEY_7);
+}
