@@ -22,14 +22,14 @@
           "line": 36
         },
         {
-          "name": "S1_4_OtherButtonShouldInvalidateInput",
+          "name": "S1_4_InvalidateOnlyLastDigitAfterAutoChange",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
           "line": 52
         },
         {
           "name": "S1_5_LeadingZeroShouldBeRemoved",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 72
+          "line": 71
         }
       ]
     }

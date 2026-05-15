@@ -197,19 +197,6 @@ TVControllerTest/fast:
 .PHONY : TVControllerTest/fast
 
 #=============================================================================
-# Target rules for targets named FavoriteChannelTest
-
-# Build rule for target.
-FavoriteChannelTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FavoriteChannelTest
-.PHONY : FavoriteChannelTest
-
-# fast build rule for target.
-FavoriteChannelTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/build
-.PHONY : FavoriteChannelTest/fast
-
-#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -260,30 +247,6 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
-
-test/FavoriteChannelTest.obj: test/FavoriteChannelTest.cpp.obj
-.PHONY : test/FavoriteChannelTest.obj
-
-# target to build an object file
-test/FavoriteChannelTest.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj
-.PHONY : test/FavoriteChannelTest.cpp.obj
-
-test/FavoriteChannelTest.i: test/FavoriteChannelTest.cpp.i
-.PHONY : test/FavoriteChannelTest.i
-
-# target to preprocess a source file
-test/FavoriteChannelTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.i
-.PHONY : test/FavoriteChannelTest.cpp.i
-
-test/FavoriteChannelTest.s: test/FavoriteChannelTest.cpp.s
-.PHONY : test/FavoriteChannelTest.s
-
-# target to generate assembly for a file
-test/FavoriteChannelTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.s
-.PHONY : test/FavoriteChannelTest.cpp.s
 
 test/TVControllerTest.obj: test/TVControllerTest.cpp.obj
 .PHONY : test/TVControllerTest.obj
@@ -346,16 +309,12 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... FavoriteChannelTest
 	@echo ... TVControllerTest
 	@echo ... TunerTest
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... test/FavoriteChannelTest.obj
-	@echo ... test/FavoriteChannelTest.i
-	@echo ... test/FavoriteChannelTest.s
 	@echo ... test/TVControllerTest.obj
 	@echo ... test/TVControllerTest.i
 	@echo ... test/TVControllerTest.s
