@@ -46,6 +46,8 @@ public:
       processingCH += to_string(key);
 
       if (processingCH.length() == 2) {
+        int chNum = std::stoi(processingCH);
+        processingCH = std::to_string(chNum);
         setTunerCh();
         processingCH = ""; // 다음 34를 받기 위해 비워줌
       }
