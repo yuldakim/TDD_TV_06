@@ -68,8 +68,18 @@ public:
       break;
     case remoteKey::KEY_FAV: {
       int curr = std::stoi(tuner->getCurrentCH());
-      favorites.push_back(curr);
-      std::sort(favorites.begin(), favorites.end()); // 명세: 항상 정렬 유지
+
+      // 1. 목록에서 현재 채널이 있는지 찾기
+      auto it = std::find(favorites.begin(), favorites.end(), curr);
+
+      if (it != favorites.end()) {
+        // 2. 이미 있다면 삭제 (S2-2)
+        favorites.erase(it);
+      } else {
+        // 3. 없다면 추가 (S2-1)
+        favorites.push_back(curr);
+        std::sort(favorites.begin(), favorites.end()); // 명세: 항상 정렬 유지
+      }
       break;
     }
     }
