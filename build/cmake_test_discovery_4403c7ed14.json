@@ -1,10 +1,10 @@
 {
-  "tests": 2,
+  "tests": 3,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TVControllerTest",
-      "tests": 2,
+      "tests": 3,
       "testsuite": [
         {
           "name": "Press1AndConfirmShouldChangeToChannel1",
@@ -15,6 +15,11 @@
           "name": "PressMultipleDigitsAndConfirmShouldChangeChannel",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
           "line": 24
+        },
+        {
+          "name": "S1_3_ContinuousInput",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 36
         }
       ]
     }
