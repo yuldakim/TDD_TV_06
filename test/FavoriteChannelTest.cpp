@@ -130,3 +130,27 @@ TEST_F(FavoriteChannelTest, S3_2_NextFavoriteChannel_WhenCurrentIsInList) {
   // 4. When: 다음 선호 채널 버튼(≫) 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
 }
+
+TEST_F(FavoriteChannelTest, S3_3_NextFavoriteChannel_WrapAround) {
+  // 1. Given: 명세서 데이터 세팅 {1, 4, 12, 56}
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("1"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("4"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("56"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 2. [핵심 조건] 현재 시청 채널을 목록의 마지막인 '56번'으로 설정
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("56"));
+
+  // 3. Then: 다음 버튼을 누르면 가장 처음인 '1번'으로 돌아가야 함!
+  EXPECT_CALL(tuner, setCH("1")).Times(1);
+
+  // 4. When: 다음 선호 채널 버튼(≫) 클릭
+  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+}
