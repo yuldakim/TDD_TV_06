@@ -8,27 +8,27 @@
       "testsuite": [
         {
           "name": "Press1AndConfirmShouldChangeToChannel1",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 13
         },
         {
           "name": "PressMultipleDigitsAndConfirmShouldChangeChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 24
         },
         {
           "name": "S1_3_ContinuousInput",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 36
         },
         {
           "name": "S1_4_InvalidateOnlyLastDigitAfterAutoChange",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 52
         },
         {
           "name": "S1_5_LeadingZeroShouldBeRemoved",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 71
         }
       ]

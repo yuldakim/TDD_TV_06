@@ -1,0 +1,21 @@
+# ninja log v7
+18	1961	8006421829667638	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	679ad043f1a8ab89
+47	2431	8006421829968798	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	cc01ebb01ae4a5e8
+23	2740	8006421829728849	CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj	e12fee845239a46f
+37	2844	8006421829853411	CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj	d63ee82edc7ec241
+29	3751	8006421829791920	CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj	564b19a771a0a0a4
+11	4484	8006421829604574	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	816c0514b15c6eec
+6	11832	8006421829428021	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	55bd888412bbb1d0
+11835	12136	8006421947826924	lib/libgtest.a	3b9997a97ff47c40
+12143	12373	8006421950842774	lib/libgtest_main.a	59b1a7bd9225014d
+12136	12414	8006421950842774	lib/libgmock.a	3deea4a3c88a0826
+12443	12662	8006421953913636	lib/libgmock_main.a	c2c46e956c129072
+12432	13469	8006421963989785	FavoriteChannelTest.exe	7ba584c06687d17c
+12432	13469	8006421963989785	FavoriteChannelTest[1]_tests.cmake	7ba584c06687d17c
+12432	13469	8006421963989785	C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake	7ba584c06687d17c
+12414	13483	8006421964168107	TunerTest.exe	322e84e387aaa0d5
+12414	13483	8006421964168107	TunerTest[1]_tests.cmake	322e84e387aaa0d5
+12414	13483	8006421964168107	C:/DEV_BR/TDD_TV_06/build/TunerTest[1]_tests.cmake	322e84e387aaa0d5
+12421	13639	8006421965760293	TVControllerTest.exe	ba6e9d875721bc90
+12421	13639	8006421965760293	TVControllerTest[1]_tests.cmake	ba6e9d875721bc90
+12421	13639	8006421965760293	C:/DEV_BR/TDD_TV_06/build/TVControllerTest[1]_tests.cmake	ba6e9d875721bc90

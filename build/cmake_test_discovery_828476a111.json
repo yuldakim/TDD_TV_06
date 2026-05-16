@@ -8,27 +8,27 @@
       "testsuite": [
         {
           "name": "initChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 45
         },
         {
           "name": "testSetChForValidChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 52
         },
         {
           "name": "testSetChForInvalidChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 63
         },
         {
           "name": "testSeekCh10times",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 73
         },
         {
           "name": "testSeekCh10timesAfterSetCH",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 89
         }
       ]

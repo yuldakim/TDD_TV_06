@@ -8,32 +8,32 @@
       "testsuite": [
         {
           "name": "S2_1_AddCurrentChannelToFavorites",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 34
         },
         {
           "name": "S2_2_ToggleFavoriteRemoveIfExisted",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 43
         },
         {
           "name": "S2_3_ComplexSequenceTest",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 52
         },
         {
           "name": "S3_1_NextFavoriteChannel_Normal",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 74
         },
         {
           "name": "S3_3_NextFavoriteChannel_WrapAround",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 95
         },
         {
           "name": "S3_4_NextFavoriteChannel_WhenListIsEmpty",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
           "line": 115
         }
       ]
