@@ -1,35 +1,40 @@
 {
-  "tests": 5,
+  "tests": 6,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TunerFakeTest",
-      "tests": 5,
+      "tests": 6,
       "testsuite": [
         {
           "name": "initChannel",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
-          "line": 45
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 75
         },
         {
           "name": "testSetChForValidChannel",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
-          "line": 52
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 82
         },
         {
           "name": "testSetChForInvalidChannel",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
-          "line": 63
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 93
         },
         {
           "name": "testSeekCh10times",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
-          "line": 73
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 103
         },
         {
           "name": "testSeekCh10timesAfterSetCH",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TunerTest.cpp",
-          "line": 89
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 121
+        },
+        {
+          "name": "ZZZ_FinalTunerApprovalVerification",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "line": 137
         }
       ]
     }

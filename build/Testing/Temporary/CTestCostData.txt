@@ -1,0 +1,20 @@
+TunerFakeTest.initChannel 2 0.0082915
+TunerFakeTest.testSetChForValidChannel 2 0.0084134
+TunerFakeTest.testSetChForInvalidChannel 2 0.0096347
+TunerFakeTest.testSeekCh10times 2 0.0080328
+TunerFakeTest.testSeekCh10timesAfterSetCH 2 0.0085433
+TunerFakeTest.ZZZ_FinalTunerApprovalVerification 1 0.015308
+TVControllerTest.Press1AndConfirmShouldChangeToChannel1 2 0.0105894
+TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel 2 0.00943395
+TVControllerTest.S1_3_ContinuousInput 2 0.0087964
+TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange 2 0.0095449
+TVControllerTest.S1_5_LeadingZeroShouldBeRemoved 2 0.0103842
+TVControllerTest.ZZZ_FinalApprovalVerification 1 0.020286
+FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites 2 0.0087086
+FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted 2 0.0222482
+FavoriteChannelTest.S2_3_ComplexSequenceTest 2 0.0200195
+FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal 2 0.0250565
+FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange 2 0.0117832
+FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround 2 0.00940395
+FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty 2 0.00954725
+---

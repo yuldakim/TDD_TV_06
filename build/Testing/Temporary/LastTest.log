@@ -1,0 +1,522 @@
+Start testing: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+----------------------------------------------------------
+1/19 Testing: TunerFakeTest.initChannel
+1/19 Test: TunerFakeTest.initChannel
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.initChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.initChannel" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.initChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.initChannel
+[       OK ] TunerFakeTest.initChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.initChannel" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.initChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/19 Testing: TunerFakeTest.testSetChForValidChannel
+2/19 Test: TunerFakeTest.testSetChForValidChannel
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSetChForValidChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.testSetChForValidChannel" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.testSetChForValidChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.testSetChForValidChannel
+[       OK ] TunerFakeTest.testSetChForValidChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.testSetChForValidChannel" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.testSetChForValidChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/19 Testing: TunerFakeTest.testSetChForInvalidChannel
+3/19 Test: TunerFakeTest.testSetChForInvalidChannel
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSetChForInvalidChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.testSetChForInvalidChannel" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.testSetChForInvalidChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.testSetChForInvalidChannel
+[       OK ] TunerFakeTest.testSetChForInvalidChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.testSetChForInvalidChannel" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.testSetChForInvalidChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/19 Testing: TunerFakeTest.testSeekCh10times
+4/19 Test: TunerFakeTest.testSeekCh10times
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSeekCh10times" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.testSeekCh10times" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.testSeekCh10times
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.testSeekCh10times
+[       OK ] TunerFakeTest.testSeekCh10times (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.testSeekCh10times" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.testSeekCh10times" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/19 Testing: TunerFakeTest.testSeekCh10timesAfterSetCH
+5/19 Test: TunerFakeTest.testSeekCh10timesAfterSetCH
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSeekCh10timesAfterSetCH" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.testSeekCh10timesAfterSetCH" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.testSeekCh10timesAfterSetCH
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.testSeekCh10timesAfterSetCH
+[       OK ] TunerFakeTest.testSeekCh10timesAfterSetCH (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.testSeekCh10timesAfterSetCH" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.testSeekCh10timesAfterSetCH" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/19 Testing: TunerFakeTest.ZZZ_FinalTunerApprovalVerification
+6/19 Test: TunerFakeTest.ZZZ_FinalTunerApprovalVerification
+Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.ZZZ_FinalTunerApprovalVerification" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TunerFakeTest.ZZZ_FinalTunerApprovalVerification
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.ZZZ_FinalTunerApprovalVerification
+[       OK ] TunerFakeTest.ZZZ_FinalTunerApprovalVerification (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/19 Testing: TVControllerTest.Press1AndConfirmShouldChangeToChannel1
+7/19 Test: TVControllerTest.Press1AndConfirmShouldChangeToChannel1
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.Press1AndConfirmShouldChangeToChannel1" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.Press1AndConfirmShouldChangeToChannel1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.Press1AndConfirmShouldChangeToChannel1
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 1
+[       OK ] TVControllerTest.Press1AndConfirmShouldChangeToChannel1 (0 ms)
+[----------] 1 test from TVControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/19 Testing: TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
+8/19 Test: TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 12
+[       OK ] TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel (0 ms)
+[----------] 1 test from TVControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/19 Testing: TVControllerTest.S1_3_ContinuousInput
+9/19 Test: TVControllerTest.S1_3_ContinuousInput
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_3_ContinuousInput" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.S1_3_ContinuousInput" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.S1_3_ContinuousInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.S1_3_ContinuousInput
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 12
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 34
+[       OK ] TVControllerTest.S1_3_ContinuousInput (0 ms)
+[----------] 1 test from TVControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.S1_3_ContinuousInput" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.S1_3_ContinuousInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/19 Testing: TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+10/19 Test: TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 45
+[       OK ] TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange (0 ms)
+[----------] 1 test from TVControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/19 Testing: TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+11/19 Test: TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+ÌòÑÏû¨ ÏÑ§Ï†ïÌïòÎäî Ï±ÑÎÑê : 7
+[       OK ] TVControllerTest.S1_5_LeadingZeroShouldBeRemoved (1 ms)
+[----------] 1 test from TVControllerTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/19 Testing: TVControllerTest.ZZZ_FinalApprovalVerification
+12/19 Test: TVControllerTest.ZZZ_FinalApprovalVerification
+Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.ZZZ_FinalApprovalVerification" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"TVControllerTest.ZZZ_FinalApprovalVerification" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TVControllerTest.ZZZ_FinalApprovalVerification
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerTest
+[ RUN      ] TVControllerTest.ZZZ_FinalApprovalVerification
+[       OK ] TVControllerTest.ZZZ_FinalApprovalVerification (0 ms)
+[----------] 1 test from TVControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerTest.ZZZ_FinalApprovalVerification" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"TVControllerTest.ZZZ_FinalApprovalVerification" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/19 Testing: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+13/19 Test: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+[       OK ] FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/19 Testing: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+14/19 Test: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+[       OK ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/19 Testing: FavoriteChannelTest.S2_3_ComplexSequenceTest
+15/19 Test: FavoriteChannelTest.S2_3_ComplexSequenceTest
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_3_ComplexSequenceTest" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S2_3_ComplexSequenceTest" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_3_ComplexSequenceTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_3_ComplexSequenceTest
+[       OK ] FavoriteChannelTest.S2_3_ComplexSequenceTest (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_3_ComplexSequenceTest" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S2_3_ComplexSequenceTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/19 Testing: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+16/19 Test: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+[       OK ] FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/19 Testing: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+17/19 Test: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+[       OK ] FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange (1 ms)
+[----------] 1 test from FavoriteChannelTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/19 Testing: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+18/19 Test: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+[       OK ] FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/19 Testing: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+19/19 Test: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" start time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+[       OK ] FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" end time: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√
+"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 17 00:41 ¥Î«—πŒ±π «•¡ÿΩ√

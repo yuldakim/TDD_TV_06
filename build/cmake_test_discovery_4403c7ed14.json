@@ -1,35 +1,40 @@
 {
-  "tests": 5,
+  "tests": 6,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TVControllerTest",
-      "tests": 5,
+      "tests": 6,
       "testsuite": [
         {
           "name": "Press1AndConfirmShouldChangeToChannel1",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
-          "line": 13
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 46
         },
         {
           "name": "PressMultipleDigitsAndConfirmShouldChangeChannel",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
-          "line": 24
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 61
         },
         {
           "name": "S1_3_ContinuousInput",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
-          "line": 36
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 77
         },
         {
           "name": "S1_4_InvalidateOnlyLastDigitAfterAutoChange",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
-          "line": 52
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 95
         },
         {
           "name": "S1_5_LeadingZeroShouldBeRemoved",
-          "file": "C:\/DEV_BR\/TDD_TV_06\/test\/TVControllerTest.cpp",
-          "line": 71
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 116
+        },
+        {
+          "name": "ZZZ_FinalApprovalVerification",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
+          "line": 134
         }
       ]
     }
