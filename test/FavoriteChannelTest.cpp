@@ -154,3 +154,15 @@ TEST_F(FavoriteChannelTest, S3_3_NextFavoriteChannel_WrapAround) {
   // 4. When: 다음 선호 채널 버튼(≫) 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
 }
+
+TEST_F(FavoriteChannelTest, S3_4_NextFavoriteChannel_WhenListIsEmpty) {
+  // 1. Given: 선호 채널 버튼을 한 번도 누르지 않아 favorites 목록이 완전히
+  // 비어있음 현재 시청 채널이 23번이라고 가정
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("23"));
+
+  // 2. Then: 목록이 비어있으므로 setCH는 절대 호출되면 안 됨!
+  EXPECT_CALL(tuner, setCH(_)).Times(0);
+
+  // 3. When: 목록이 빈 상태에서 다음 선호 채널 버튼(≫) 클릭
+  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+}

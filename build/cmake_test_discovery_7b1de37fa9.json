@@ -1,10 +1,10 @@
 {
-  "tests": 6,
+  "tests": 7,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "FavoriteChannelTest",
-      "tests": 6,
+      "tests": 7,
       "testsuite": [
         {
           "name": "S2_1_AddCurrentChannelToFavorites",
@@ -35,6 +35,11 @@
           "name": "S3_3_NextFavoriteChannel_WrapAround",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
           "line": 134
+        },
+        {
+          "name": "S3_4_NextFavoriteChannel_WhenListIsEmpty",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "line": 158
         }
       ]
     }
