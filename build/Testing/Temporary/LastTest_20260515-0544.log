@@ -1,3 +1,30 @@
-Start testing: May 15 17:34 대한민국 표준시
+Start testing: May 16 21:27 대한민국 표준시
 ----------------------------------------------------------
-End testing: May 15 17:34 대한민국 표준시
+20/21 Testing: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+20/21 Test: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV_BR/TDD_TV_06/build
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" start time: May 16 21:27 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+[       OK ] FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" end time: May 16 21:27 대한민국 표준시
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 16 21:27 대한민국 표준시
