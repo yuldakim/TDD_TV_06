@@ -101,12 +101,6 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/mingw64/include/c++/15.2.0/tuple \
- C:/mingw64/include/c++/15.2.0/stdexcept \
- C:/mingw64/include/c++/15.2.0/exception \
- C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
- C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
- C:/mingw64/include/c++/15.2.0/typeinfo \
- C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
  C:/DEV_BR/TDD_TV_06/include/remoteKey.h \
  C:/mingw64/include/c++/15.2.0/algorithm \
  C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
@@ -120,6 +114,11 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/ostream \
  C:/mingw64/include/c++/15.2.0/bits/ostream.h \
  C:/mingw64/include/c++/15.2.0/ios \
+ C:/mingw64/include/c++/15.2.0/exception \
+ C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
+ C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+ C:/mingw64/include/c++/15.2.0/typeinfo \
+ C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
  C:/mingw64/include/c++/15.2.0/bits/ios_base.h \
  C:/mingw64/include/c++/15.2.0/ext/atomicity.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
@@ -143,6 +142,7 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
  C:/mingw64/include/c++/15.2.0/system_error \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ C:/mingw64/include/c++/15.2.0/stdexcept \
  C:/mingw64/include/c++/15.2.0/streambuf \
  C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
  C:/mingw64/include/c++/15.2.0/bits/basic_ios.h \
