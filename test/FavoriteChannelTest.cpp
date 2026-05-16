@@ -106,3 +106,24 @@ TEST_F(FavoriteChannelTest, S3_1_NextFavoriteChannel_Normal) {
   // 4. When: 다음 선호 채널 버튼(≫) 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
 }
+
+TEST_F(FavoriteChannelTest, S3_2_NextFavoriteChannel_WhenCurrentIsInList) {
+  // 1. Given: 목록에 {6, 12, 37} 미리 세팅
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("37"));
+  controller->pushButton(remoteKey::KEY_FAV);
+
+  // 2. 현재 채널을 목록에 존재하는 "12"로 설정
+  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
+
+  // 3. Then: 다음 버튼을 누르면 12 다음 값인 37번이 불려야 함!
+  EXPECT_CALL(tuner, setCH("12")).Times(1);
+
+  // 4. When: 다음 선호 채널 버튼(≫) 클릭
+  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+}
