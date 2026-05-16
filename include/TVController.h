@@ -96,6 +96,10 @@ public:
       // 3. 찾았다면 그 채널로 변경! (S3-1 달성)
       if (it != favorites.end()) {
         tuner->setCH(std::to_string(*it));
+      } else {
+        // [여기가 핵심!] upper_bound가 끝(end)을 가리킨다는 건,
+        // 현재 채널보다 큰 값이 목록에 없다는 뜻입니다!
+        tuner->setCH(std::to_string(favorites[0])); // 가장 첫 번째 값으로 이동!
       }
       break;
     }
