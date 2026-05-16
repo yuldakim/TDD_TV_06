@@ -25,40 +25,11 @@
 	ProcessorClockFrequency="2801.000000"
 	>
 	<Testing>
-		<StartDateTime>May 16 21:27 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
-		<StartTestTime>1778934474</StartTestTime>
-		<TestList>
-			<Test>./FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted</Test>
-		</TestList>
-		<Test Status="passed">
-			<Name>FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted</Name>
-			<Path>.</Path>
-			<FullName>./FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted</FullName>
-			<FullCommandLine>C:\DEV_BR\TDD_TV_06\build\FavoriteChannelTest.exe "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778934474.051975</StartTestTime>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.071472</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>C:\DEV_BR\TDD_TV_06\build\FavoriteChannelTest.exe "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Environment">
-					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJydUctOwzAQvPsr9tgcEpUeOFTqAZpQIaSCktBLHFlusgmWHLuyncDnk0epWgQSdE+7mtnx7DhulRKqhoYLNfOgMrqB9ZKG0Y7dxzQNQ5bu2PyW7lshS8pKPFhaa11LdGidb01xNtJxHDo26AVFQbba4RI2IwXSHoFKSIcGVvDAO22Ew/UbVwrlAAbJgi1Yquue/QXH2OgOH6voQ1iHJclWp8ohPtq/ATdqD/aPvW375YBk/qly2Ei953LCUXXCaNWg6rno/PbwjXyu+YNXkkH8uoWx8quPmfbh+elqDZjNobHev7xPO+C049Ijf8vIITd+qd/V5Q/8ljwYroLLd/pjX+6SJAqHwCZuQD4BpJfVMQ==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<EndDateTime>May 16 21:27 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
-		<EndTestTime>1778934474</EndTestTime>
+		<StartDateTime>May 16 21:31 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1778934704</StartTestTime>
+		<TestList/>
+		<EndDateTime>May 16 21:31 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1778934704</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -1,10 +1,10 @@
 {
-  "tests": 3,
+  "tests": 4,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "FavoriteChannelTest",
-      "tests": 3,
+      "tests": 4,
       "testsuite": [
         {
           "name": "S2_1_AddCurrentChannelToFavorites",
@@ -20,6 +20,11 @@
           "name": "S2_3_ComplexSequenceTest",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
           "line": 55
+        },
+        {
+          "name": "S3_1_NextFavoriteChannel_Normal",
+          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
+          "line": 88
         }
       ]
     }

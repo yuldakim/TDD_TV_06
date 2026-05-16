@@ -82,6 +82,23 @@ public:
       }
       break;
     }
+    case remoteKey::KEY_NEXT_FAV: {
+      // 목록이 비어있으면 아무것도 안 함 (나중 명세 예방책으로 살짝 둠)
+      if (favorites.empty())
+        break;
+
+      // 1. 현재 채널 가져오기
+      int curr = std::stoi(tuner->getCurrentCH());
+
+      // 2. upper_bound로 현재 채널보다 큰 첫 번째 채널 찾기
+      auto it = std::upper_bound(favorites.begin(), favorites.end(), curr);
+
+      // 3. 찾았다면 그 채널로 변경! (S3-1 달성)
+      if (it != favorites.end()) {
+        tuner->setCH(std::to_string(*it));
+      }
+      break;
+    }
     }
   }
 };
