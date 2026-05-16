@@ -163,20 +163,11 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
  C:/DEV_BR/TDD_TV_06/include/Tuner.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h \
- C:/mingw64/include/c++/15.2.0/functional \
- C:/mingw64/include/c++/15.2.0/bits/std_function.h \
- C:/mingw64/include/c++/15.2.0/unordered_map \
- C:/mingw64/include/c++/15.2.0/bits/unordered_map.h \
- C:/mingw64/include/c++/15.2.0/bits/hashtable.h \
- C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
- C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
- C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
- C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
- C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
- C:/mingw64/include/c++/15.2.0/array \
- C:/mingw64/include/c++/15.2.0/compare \
+ C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ C:/mingw64/include/c++/15.2.0/cstdint \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/mingw64/include/c++/15.2.0/limits \
  C:/mingw64/include/c++/15.2.0/memory \
  C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
  C:/mingw64/include/c++/15.2.0/bits/align.h \
@@ -184,26 +175,27 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
  C:/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
+ C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
  C:/mingw64/include/c++/15.2.0/ext/concurrence.h \
  C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
  C:/mingw64/include/c++/15.2.0/bits/atomic_base.h \
  C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
  C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
- C:/mingw64/include/c++/15.2.0/utility \
- C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h \
- C:/mingw64/x86_64-w64-mingw32/include/assert.h \
- C:/mingw64/include/c++/15.2.0/cstdint \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h \
+ C:/mingw64/include/c++/15.2.0/set \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_set.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
+ C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
+ C:/mingw64/include/c++/15.2.0/sstream \
+ C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
+ C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
  C:/mingw64/include/c++/15.2.0/ciso646 \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/mingw64/include/c++/15.2.0/limits \
  C:/mingw64/include/c++/15.2.0/locale \
  C:/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.h \
  C:/mingw64/include/c++/15.2.0/ctime \
@@ -225,22 +217,24 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/unique_lock.h \
  C:/mingw64/include/c++/15.2.0/mutex C:/mingw64/include/c++/15.2.0/any \
  C:/mingw64/include/c++/15.2.0/optional \
+ C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
  C:/mingw64/include/c++/15.2.0/variant \
  C:/mingw64/include/c++/15.2.0/bits/monostate.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
- C:/mingw64/include/c++/15.2.0/set \
- C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_set.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
- C:/mingw64/include/c++/15.2.0/sstream \
- C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  C:/mingw64/include/c++/15.2.0/atomic \
+ C:/mingw64/include/c++/15.2.0/functional \
+ C:/mingw64/include/c++/15.2.0/bits/std_function.h \
+ C:/mingw64/include/c++/15.2.0/unordered_map \
+ C:/mingw64/include/c++/15.2.0/bits/unordered_map.h \
+ C:/mingw64/include/c++/15.2.0/bits/hashtable.h \
+ C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
+ C:/mingw64/include/c++/15.2.0/array \
+ C:/mingw64/include/c++/15.2.0/compare \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
+ C:/mingw64/include/c++/15.2.0/utility \
+ C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
  C:/mingw64/x86_64-w64-mingw32/include/float.h \
@@ -258,32 +252,8 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stream_iterator.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
  C:/mingw64/include/c++/15.2.0/cassert \
+ C:/mingw64/x86_64-w64-mingw32/include/assert.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h \
- C:/mingw64/include/c++/15.2.0/cmath \
- C:/mingw64/x86_64-w64-mingw32/include/math.h \
- C:/mingw64/include/c++/15.2.0/bits/specfun.h \
- C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
- C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
- C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h
+ C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h

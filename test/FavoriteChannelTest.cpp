@@ -1,21 +1,27 @@
 #include "TVController.h"
 #include "Tuner.h"
-#include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-using namespace ::testing;
 
-// 추가: 여기서 MockTuner를 정의해줘야 아래 TestFixture에서 쓸 수 있습니다.
-class MockTunerForFav : public Tuner {
+// 1. 구글 목 대신 내부 변수에 채널 상태를 기억하는 순수 가짜 부품(Fake) 정의
+class FakeTunerForFav : public Tuner {
 public:
-  MOCK_METHOD(std::string, seekCH, (), (override));
-  MOCK_METHOD(void, setCH, (const std::string &ch), (override));
-  MOCK_METHOD(std::string, getCurrentCH, (), (override));
+  std::string currentChannel = "0"; // 진짜 기계처럼 현재 채널 상태를 가짐
+
+  void setCH(const std::string &ch) override {
+    currentChannel = ch; // 채널 설정 명령이 오면 변수 값을 바꿈
+  }
+
+  std::string getCurrentCH() override {
+    return currentChannel; // 현재 채널을 물어보면 변수 값을 그대로 반환
+  }
+
+  std::string seekCH() override { return currentChannel; }
 };
 
-class FavoriteChannelTest : public Test {
+class FavoriteChannelTest : public ::testing::Test {
 protected:
-  MockTunerForFav tuner; // 이름을 MockTunerForFav로 맞춤
+  FakeTunerForFav tuner; // 가짜 튜너 부품 생성
   TVController *controller;
 
   void SetUp() override { controller = new TVController(&tuner); }
@@ -23,146 +29,96 @@ protected:
   void TearDown() override { delete controller; }
 };
 
-// S2-1: 현재 채널을 선호 채널 목록에 추가
-TEST_F(FavoriteChannelTest, S2_1_AddCurrentChannelToFavorites) {
-  // 1. Given: 현재 튜너의 채널이 "10"번이라고 설정됨
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("10"));
+// --- S2: 선호 채널 관리 테스트 ---
 
-  // 2. When: 선호 채널 버튼(★) 클릭
+TEST_F(FavoriteChannelTest, S2_1_AddCurrentChannelToFavorites) {
+  tuner.currentChannel = "10"; // 튜너를 10번 채널로 직접 조작
   controller->pushButton(remoteKey::KEY_FAV);
 
-  // 3. Then: 리스트를 가져와서 10이 들어있는지 확인 (가장 심플한 검증!)
   std::vector<int> favs = controller->getFavorites();
-  ASSERT_EQ(1, favs.size()); // 목록에 1개가 있어야 함
-  EXPECT_EQ(10, favs[0]);    // 그 값이 10이어야 함
+  ASSERT_EQ(1, favs.size());
+  EXPECT_EQ(10, favs[0]);
 }
 
 TEST_F(FavoriteChannelTest, S2_2_ToggleFavoriteRemoveIfExisted) {
-  // 1. Given: 현재 채널이 "7"번이라고 가정
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("7"));
+  tuner.currentChannel = "7";
+  controller->pushButton(remoteKey::KEY_FAV); // 첫 번째 누름: 추가
+  ASSERT_EQ(1, controller->getFavorites().size());
 
-  // 2. When: 첫 번째 클릭 (추가)
-  controller->pushButton(remoteKey::KEY_FAV);
-  ASSERT_EQ(1, controller->getFavorites().size()); // 일단 1개 들어간 것 확인
-
-  // 3. When: 두 번째 클릭 (삭제/토글)
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 4. Then: 목록이 다시 비어있어야 함!
+  controller->pushButton(remoteKey::KEY_FAV); // 두 번째 누름: 삭제(토글)
   EXPECT_EQ(0, controller->getFavorites().size());
 }
 
 TEST_F(FavoriteChannelTest, S2_3_ComplexSequenceTest) {
-  // 1. 12번 추가
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
+  // 시나리오: 12(추가) -> 8(추가) -> 37(추가) -> 8(삭제) -> 6(추가)
+  tuner.currentChannel = "12";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "8";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "37";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "8";
+  controller->pushButton(remoteKey::KEY_FAV); // 토글 삭제
+  tuner.currentChannel = "6";
   controller->pushButton(remoteKey::KEY_FAV);
 
-  // 2. 8번 추가
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("8"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 3. 37번 추가
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("37"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 4. 8번 다시 눌러서 삭제 (토글)
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("8"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 5. 6번 추가
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 최종 검증
   std::vector<int> favs = controller->getFavorites();
-
-  // 개수는 3개여야 함
   ASSERT_EQ(3, favs.size());
-
-  // 명세: 항상 정렬 유지 -> {6, 12, 37} 순서여야 함
   EXPECT_EQ(6, favs[0]);
   EXPECT_EQ(12, favs[1]);
   EXPECT_EQ(37, favs[2]);
 }
 
+// --- S3: 다음 선호 채널 탐색 테스트 ---
+
 TEST_F(FavoriteChannelTest, S3_1_NextFavoriteChannel_Normal) {
-  // 1. Given: 목록에 {6, 12, 37}을 미리 세팅하기 위해 버튼을 누릅니다.
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
+  // Given: 목록에 {1, 4, 12, 56}이 채워진 상태 만들기
+  tuner.currentChannel = "1";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "4";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "12";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "56";
   controller->pushButton(remoteKey::KEY_FAV);
 
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
-  controller->pushButton(remoteKey::KEY_FAV);
+  // [핵심 조건] 현재 6번 시청 중
+  tuner.currentChannel = "6";
 
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("37"));
-  controller->pushButton(remoteKey::KEY_FAV);
-  // 이 시점에서 내부 목록은 정렬되어 {6, 12, 37}이 됩니다.
-
-  // 2. 현재 채널을 "10"으로 설정 (12와 6 사이의 값)
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("10"));
-
-  // 3. Then: 다음 선호 버튼을 누르면 10보다 큰 12번이 불려야 함!
-  EXPECT_CALL(tuner, setCH("12")).Times(1);
-
-  // 4. When: 다음 선호 채널 버튼(≫) 클릭
+  // When: 다음 선호 버튼 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
-}
 
-TEST_F(FavoriteChannelTest, S3_2_NextFavoriteChannel_WhenCurrentIsInList) {
-  // 1. Given: 명세서 데이터 세팅 {1, 4, 12, 56}
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("1"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("4"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("56"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 2. 현재 시청 채널을 목록에 있는 '12번'으로 설정
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("6"));
-
-  // 3. Then: 12번에서 다음 버튼을 누르면 그 다음 큰 값인 '56번'으로 가야 함!
-  EXPECT_CALL(tuner, setCH("12")).Times(1);
-
-  // 4. When: 다음 선호 채널 버튼(≫) 클릭
-  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+  // Then: 6번보다 큰 다음 채널인 '12번'으로 튜너 상태가 조작되었는지 검증!
+  EXPECT_EQ("12", tuner.currentChannel);
 }
 
 TEST_F(FavoriteChannelTest, S3_3_NextFavoriteChannel_WrapAround) {
-  // 1. Given: 명세서 데이터 세팅 {1, 4, 12, 56}
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("1"));
+  tuner.currentChannel = "1";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "4";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "12";
+  controller->pushButton(remoteKey::KEY_FAV);
+  tuner.currentChannel = "56";
   controller->pushButton(remoteKey::KEY_FAV);
 
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("4"));
-  controller->pushButton(remoteKey::KEY_FAV);
+  // [핵심 조건] 현재 목록의 가장 마지막인 56번 시청 중
+  tuner.currentChannel = "56";
 
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("12"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("56"));
-  controller->pushButton(remoteKey::KEY_FAV);
-
-  // 2. [핵심 조건] 현재 시청 채널을 목록의 마지막인 '56번'으로 설정
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("56"));
-
-  // 3. Then: 다음 버튼을 누르면 가장 처음인 '1번'으로 돌아가야 함!
-  EXPECT_CALL(tuner, setCH("1")).Times(1);
-
-  // 4. When: 다음 선호 채널 버튼(≫) 클릭
+  // When: 다음 선호 버튼 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
+
+  // Then: 다시 처음인 '1번'으로 되돌아왔는지 검증!
+  EXPECT_EQ("1", tuner.currentChannel);
 }
 
 TEST_F(FavoriteChannelTest, S3_4_NextFavoriteChannel_WhenListIsEmpty) {
-  // 1. Given: 선호 채널 버튼을 한 번도 누르지 않아 favorites 목록이 완전히
-  // 비어있음 현재 시청 채널이 23번이라고 가정
-  EXPECT_CALL(tuner, getCurrentCH()).WillRepeatedly(Return("23"));
+  // Given: 목록이 완전히 비어있고 현재 23번 시청 중
+  tuner.currentChannel = "23";
 
-  // 2. Then: 목록이 비어있으므로 setCH는 절대 호출되면 안 됨!
-  EXPECT_CALL(tuner, setCH(_)).Times(0);
-
-  // 3. When: 목록이 빈 상태에서 다음 선호 채널 버튼(≫) 클릭
+  // When: 다음 선호 버튼 클릭
   controller->pushButton(remoteKey::KEY_NEXT_FAV);
+
+  // Then: 채널 변경 없이 '23번' 상태가 그대로 유지되어야 함!
+  EXPECT_EQ("23", tuner.currentChannel);
 }
