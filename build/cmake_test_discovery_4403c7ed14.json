@@ -9,32 +9,32 @@
         {
           "name": "Press1AndConfirmShouldChangeToChannel1",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 46
+          "line": 27
         },
         {
           "name": "PressMultipleDigitsAndConfirmShouldChangeChannel",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 61
+          "line": 42
         },
         {
           "name": "S1_3_ContinuousInput",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 77
+          "line": 55
         },
         {
           "name": "S1_4_InvalidateOnlyLastDigitAfterAutoChange",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 95
+          "line": 69
         },
         {
           "name": "S1_5_LeadingZeroShouldBeRemoved",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 116
+          "line": 85
         },
         {
           "name": "ZZZ_FinalApprovalVerification",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TVControllerTest.cpp",
-          "line": 134
+          "line": 96
         }
       ]
     }
