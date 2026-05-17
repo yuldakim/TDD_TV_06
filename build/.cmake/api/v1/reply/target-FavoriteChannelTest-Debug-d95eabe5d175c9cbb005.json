@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TVControllerTest.exe"
+			"path" : "FavoriteChannelTest.exe"
 		},
 		{
-			"path" : "TVControllerTest.pdb"
+			"path" : "FavoriteChannelTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +35,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
@@ -47,7 +47,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 45,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
@@ -62,7 +62,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -170,14 +170,14 @@
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "TVControllerTest::@6890427a1f51a3e7e1df",
+	"id" : "FavoriteChannelTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -224,13 +224,13 @@
 			"id" : "gmock::@0f7bb11d64f3678238c7"
 		}
 	],
-	"name" : "TVControllerTest",
-	"nameOnDisk" : "TVControllerTest.exe",
+	"name" : "FavoriteChannelTest",
+	"nameOnDisk" : "FavoriteChannelTest.exe",
 	"orderDependencies" : 
 	[
 		{
 			"backtrace" : 7,
-			"id" : "TVControllerTest::@6890427a1f51a3e7e1df"
+			"id" : "FavoriteChannelTest::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -255,7 +255,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/TVControllerTest.cpp",
+			"path" : "test/FavoriteChannelTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

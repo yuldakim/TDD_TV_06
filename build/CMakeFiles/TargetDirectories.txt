@@ -1,6 +1,7 @@
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/TunerTest.dir
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/TVControllerTest.dir
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/FavoriteChannelTest.dir
+C:/DEV_BR/TDD_TV_06/build/CMakeFiles/clear_tuner_received.dir
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/test.dir
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/edit_cache.dir
 C:/DEV_BR/TDD_TV_06/build/CMakeFiles/rebuild_cache.dir

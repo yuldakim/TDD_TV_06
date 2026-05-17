@@ -9,32 +9,32 @@
         {
           "name": "initChannel",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 75
+          "line": 57
         },
         {
           "name": "testSetChForValidChannel",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 82
+          "line": 63
         },
         {
           "name": "testSetChForInvalidChannel",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 93
+          "line": 72
         },
         {
           "name": "testSeekCh10times",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 103
+          "line": 80
         },
         {
           "name": "testSeekCh10timesAfterSetCH",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 121
+          "line": 98
         },
         {
           "name": "ZZZ_FinalTunerApprovalVerification",
           "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 137
+          "line": 114
         }
       ]
     }

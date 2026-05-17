@@ -16,6 +16,7 @@
 			"add_executable",
 			"add_link_options",
 			"target_link_libraries",
+			"add_dependencies",
 			"add_custom_command",
 			"gtest_discover_tests",
 			"add_compile_options",
@@ -60,25 +61,31 @@
 				"parent" : 4
 			},
 			{
-				"command" : 4,
+				"command" : 3,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
 				"file" : 0,
 				"line" : 70,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 2,
 				"line" : 687,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
 				"line" : 12,
 				"parent" : 0
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 0,
 				"line" : 26,
 				"parent" : 0
@@ -110,18 +117,18 @@
 					"fragment" : "-g -std=gnu++17"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"fragment" : "--coverage"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"fragment" : "-O0"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/DEV_BR/TDD_TV_06/include"
 				},
 				{
@@ -164,16 +171,20 @@
 	"dependencies" : 
 	[
 		{
+			"backtrace" : 6,
+			"id" : "clear_tuner_received::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 3,
 			"id" : "gmock::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"id" : "TunerTest::@6890427a1f51a3e7e1df",
@@ -228,8 +239,12 @@
 	"orderDependencies" : 
 	[
 		{
-			"backtrace" : 7,
+			"backtrace" : 8,
 			"id" : "TunerTest::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clear_tuner_received::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 

@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = C:\DEV_BR\TDD_TV_06\build
 all: CMakeFiles/TunerTest.dir/all
 all: CMakeFiles/TVControllerTest.dir/all
 all: CMakeFiles/FavoriteChannelTest.dir/all
+all: CMakeFiles/clear_tuner_received.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -72,6 +73,7 @@ all: _deps/googletest-build/all
 codegen: CMakeFiles/TunerTest.dir/codegen
 codegen: CMakeFiles/TVControllerTest.dir/codegen
 codegen: CMakeFiles/FavoriteChannelTest.dir/codegen
+codegen: CMakeFiles/clear_tuner_received.dir/codegen
 codegen: _deps/googletest-build/codegen
 .PHONY : codegen
 
@@ -83,6 +85,7 @@ preinstall: _deps/googletest-build/preinstall
 clean: CMakeFiles/TunerTest.dir/clean
 clean: CMakeFiles/TVControllerTest.dir/clean
 clean: CMakeFiles/FavoriteChannelTest.dir/clean
+clean: CMakeFiles/clear_tuner_received.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -156,9 +159,10 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 # Target rules for target CMakeFiles/TunerTest.dir
 
 # All Build rule for target.
+CMakeFiles/TunerTest.dir/all: CMakeFiles/clear_tuner_received.dir/all
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=9,10,11 "Built target TunerTest"
@@ -176,7 +180,7 @@ TunerTest: CMakeFiles/TunerTest.dir/rule
 .PHONY : TunerTest
 
 # codegen rule for target.
-CMakeFiles/TunerTest.dir/codegen:
+CMakeFiles/TunerTest.dir/codegen: CMakeFiles/clear_tuner_received.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=9,10,11 "Finished codegen for target TunerTest"
 .PHONY : CMakeFiles/TunerTest.dir/codegen
@@ -191,8 +195,8 @@ CMakeFiles/TunerTest.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=5,6,7,8 "Built target TVControllerTest"
@@ -225,8 +229,8 @@ CMakeFiles/TVControllerTest.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=1,2,3,4 "Built target FavoriteChannelTest"
@@ -253,6 +257,38 @@ CMakeFiles/FavoriteChannelTest.dir/codegen:
 CMakeFiles/FavoriteChannelTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/clean
 .PHONY : CMakeFiles/FavoriteChannelTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/clear_tuner_received.dir
+
+# All Build rule for target.
+CMakeFiles/clear_tuner_received.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\clear_tuner_received.dir\build.make CMakeFiles/clear_tuner_received.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\clear_tuner_received.dir\build.make CMakeFiles/clear_tuner_received.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num= "Built target clear_tuner_received"
+.PHONY : CMakeFiles/clear_tuner_received.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/clear_tuner_received.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/clear_tuner_received.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 0
+.PHONY : CMakeFiles/clear_tuner_received.dir/rule
+
+# Convenience name for target.
+clear_tuner_received: CMakeFiles/clear_tuner_received.dir/rule
+.PHONY : clear_tuner_received
+
+# codegen rule for target.
+CMakeFiles/clear_tuner_received.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\clear_tuner_received.dir\build.make CMakeFiles/clear_tuner_received.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num= "Finished codegen for target clear_tuner_received"
+.PHONY : CMakeFiles/clear_tuner_received.dir/codegen
+
+# clean rule for target.
+CMakeFiles/clear_tuner_received.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\clear_tuner_received.dir\build.make CMakeFiles/clear_tuner_received.dir/clean
+.PHONY : CMakeFiles/clear_tuner_received.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir

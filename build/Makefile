@@ -210,6 +210,19 @@ FavoriteChannelTest/fast:
 .PHONY : FavoriteChannelTest/fast
 
 #=============================================================================
+# Target rules for targets named clear_tuner_received
+
+# Build rule for target.
+clear_tuner_received: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clear_tuner_received
+.PHONY : clear_tuner_received
+
+# fast build rule for target.
+clear_tuner_received/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\clear_tuner_received.dir\build.make CMakeFiles/clear_tuner_received.dir/build
+.PHONY : clear_tuner_received/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -403,6 +416,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... clear_tuner_received
 	@echo ... FavoriteChannelTest
 	@echo ... TVControllerTest
 	@echo ... TunerTest

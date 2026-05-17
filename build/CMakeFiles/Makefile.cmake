@@ -89,6 +89,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TunerTest.dir/DependInfo.cmake"
   "CMakeFiles/TVControllerTest.dir/DependInfo.cmake"
   "CMakeFiles/FavoriteChannelTest.dir/DependInfo.cmake"
+  "CMakeFiles/clear_tuner_received.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
