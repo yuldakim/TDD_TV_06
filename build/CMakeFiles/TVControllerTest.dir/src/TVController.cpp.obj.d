@@ -1,5 +1,5 @@
-CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
- C:\DEV_BR\TDD_TV_06\test\FavoriteChannelTest.cpp \
+CMakeFiles/TVControllerTest.dir/src/TVController.cpp.obj: \
+ C:\DEV_BR\TDD_TV_06\src\TVController.cpp \
  C:/DEV_BR/TDD_TV_06/include/TVController.h \
  C:/DEV_BR/TDD_TV_06/include/Tuner.h C:/mingw64/include/c++/15.2.0/string \
  C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -107,9 +107,18 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
- C:/DEV_BR/TDD_TV_06/include/Tuner.h \
- C:/mingw64/include/c++/15.2.0/fstream \
- C:/mingw64/include/c++/15.2.0/istream C:/mingw64/include/c++/15.2.0/ios \
+ C:/mingw64/include/c++/15.2.0/algorithm \
+ C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
+ C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
+ C:/mingw64/include/c++/15.2.0/iostream \
+ C:/mingw64/include/c++/15.2.0/ostream \
+ C:/mingw64/include/c++/15.2.0/bits/ostream.h \
+ C:/mingw64/include/c++/15.2.0/ios \
  C:/mingw64/include/c++/15.2.0/exception \
  C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
  C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
@@ -150,107 +159,6 @@ CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
  C:/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
- C:/mingw64/include/c++/15.2.0/ostream \
- C:/mingw64/include/c++/15.2.0/bits/ostream.h \
  C:/mingw64/include/c++/15.2.0/bits/ostream.tcc \
- C:/mingw64/include/c++/15.2.0/bits/istream.tcc \
- C:/mingw64/include/c++/15.2.0/bits/codecvt.h \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
- C:/mingw64/include/c++/15.2.0/cstdint \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/mingw64/include/c++/15.2.0/limits \
- C:/mingw64/include/c++/15.2.0/memory \
- C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
- C:/mingw64/include/c++/15.2.0/bits/align.h \
- C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
- C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
- C:/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
- C:/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
- C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
- C:/mingw64/include/c++/15.2.0/ext/concurrence.h \
- C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
- C:/mingw64/include/c++/15.2.0/bits/atomic_base.h \
- C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
- C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
- C:/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
- C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
- C:/mingw64/include/c++/15.2.0/set \
- C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
- C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_set.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
- C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
- C:/mingw64/include/c++/15.2.0/sstream \
- C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
- C:/mingw64/include/c++/15.2.0/ciso646 \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/mingw64/include/c++/15.2.0/iostream \
- C:/mingw64/include/c++/15.2.0/locale \
- C:/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.h \
- C:/mingw64/include/c++/15.2.0/ctime \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.tcc \
- C:/mingw64/include/c++/15.2.0/bits/locale_conv.h \
- C:/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
- C:/mingw64/x86_64-w64-mingw32/include/io.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
- C:/mingw64/x86_64-w64-mingw32/include/direct.h \
- C:/mingw64/include/c++/15.2.0/condition_variable \
- C:/mingw64/include/c++/15.2.0/bits/chrono.h \
- C:/mingw64/include/c++/15.2.0/ratio \
- C:/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
- C:/mingw64/include/c++/15.2.0/bits/std_mutex.h \
- C:/mingw64/include/c++/15.2.0/bits/unique_lock.h \
- C:/mingw64/include/c++/15.2.0/mutex C:/mingw64/include/c++/15.2.0/any \
- C:/mingw64/include/c++/15.2.0/optional \
- C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
- C:/mingw64/include/c++/15.2.0/variant \
- C:/mingw64/include/c++/15.2.0/bits/monostate.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
- C:/mingw64/include/c++/15.2.0/atomic \
- C:/mingw64/include/c++/15.2.0/functional \
- C:/mingw64/include/c++/15.2.0/bits/std_function.h \
- C:/mingw64/include/c++/15.2.0/unordered_map \
- C:/mingw64/include/c++/15.2.0/bits/unordered_map.h \
- C:/mingw64/include/c++/15.2.0/bits/hashtable.h \
- C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
- C:/mingw64/include/c++/15.2.0/array \
- C:/mingw64/include/c++/15.2.0/compare \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
- C:/mingw64/include/c++/15.2.0/utility \
- C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
- C:/mingw64/x86_64-w64-mingw32/include/float.h \
- C:/mingw64/include/c++/15.2.0/map \
- C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
- C:/mingw64/include/c++/15.2.0/cxxabi.h \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
- C:/mingw64/include/c++/15.2.0/iterator \
- C:/mingw64/include/c++/15.2.0/bits/stream_iterator.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
- C:/mingw64/include/c++/15.2.0/cassert \
- C:/mingw64/x86_64-w64-mingw32/include/assert.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- C:/DEV_BR/TDD_TV_06/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ C:/mingw64/include/c++/15.2.0/istream \
+ C:/mingw64/include/c++/15.2.0/bits/istream.tcc

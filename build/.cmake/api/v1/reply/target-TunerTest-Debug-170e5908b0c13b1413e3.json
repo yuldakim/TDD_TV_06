@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "FavoriteChannelTest.exe"
+			"path" : "TunerTest.exe"
 		},
 		{
-			"path" : "FavoriteChannelTest.pdb"
+			"path" : "TunerTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +35,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 46,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
@@ -47,7 +47,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 50,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
@@ -176,7 +176,7 @@
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "FavoriteChannelTest::@6890427a1f51a3e7e1df",
+	"id" : "TunerTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -223,13 +223,13 @@
 			"id" : "gmock::@0f7bb11d64f3678238c7"
 		}
 	],
-	"name" : "FavoriteChannelTest",
-	"nameOnDisk" : "FavoriteChannelTest.exe",
+	"name" : "TunerTest",
+	"nameOnDisk" : "TunerTest.exe",
 	"orderDependencies" : 
 	[
 		{
 			"backtrace" : 7,
-			"id" : "FavoriteChannelTest::@6890427a1f51a3e7e1df"
+			"id" : "TunerTest::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -253,7 +253,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/FavoriteChannelTest.cpp",
+			"path" : "test/TunerTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

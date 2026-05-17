@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj"
+  "CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj.d"
   "CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj"
   "CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj.d"
   "CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj"

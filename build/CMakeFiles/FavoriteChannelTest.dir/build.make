@@ -101,16 +101,33 @@ CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\src\remoteKey.cpp -o CMakeFiles\FavoriteChannelTest.dir\src\remoteKey.cpp.s
 
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj: CMakeFiles/FavoriteChannelTest.dir/flags.make
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj: CMakeFiles/FavoriteChannelTest.dir/includes_CXX.rsp
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj: C:/DEV_BR/TDD_TV_06/src/TVController.cpp
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj: CMakeFiles/FavoriteChannelTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj -MF CMakeFiles\FavoriteChannelTest.dir\src\TVController.cpp.obj.d -o CMakeFiles\FavoriteChannelTest.dir\src\TVController.cpp.obj -c C:\DEV_BR\TDD_TV_06\src\TVController.cpp
+
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\src\TVController.cpp > CMakeFiles\FavoriteChannelTest.dir\src\TVController.cpp.i
+
+CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\src\TVController.cpp -o CMakeFiles\FavoriteChannelTest.dir\src\TVController.cpp.s
+
 # Object files for target FavoriteChannelTest
 FavoriteChannelTest_OBJECTS = \
 "CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj" \
-"CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj"
+"CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj" \
+"CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj"
 
 # External object files for target FavoriteChannelTest
 FavoriteChannelTest_EXTERNAL_OBJECTS =
 
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/test/FavoriteChannelTest.cpp.obj
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj
+FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/build.make
 FavoriteChannelTest.exe: lib/libgtest_main.a
 FavoriteChannelTest.exe: lib/libgmock.a
@@ -118,7 +135,7 @@ FavoriteChannelTest.exe: lib/libgtest.a
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/linkLibs.rsp
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/objects1.rsp
 FavoriteChannelTest.exe: CMakeFiles/FavoriteChannelTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable FavoriteChannelTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable FavoriteChannelTest.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FavoriteChannelTest.dir\link.txt --verbose=$(VERBOSE)
 	C:\mingw64\bin\cmake.exe -D TEST_TARGET=FavoriteChannelTest -D TEST_EXECUTABLE=C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/DEV_BR/TDD_TV_06/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=FavoriteChannelTest_TESTS -D CTEST_FILE=C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-4.3/Modules/GoogleTestAddTests.cmake
 

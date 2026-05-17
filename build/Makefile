@@ -261,6 +261,33 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/TVController.obj: src/TVController.cpp.obj
+.PHONY : src/TVController.obj
+
+# target to build an object file
+src/TVController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/TVController.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.obj
+.PHONY : src/TVController.cpp.obj
+
+src/TVController.i: src/TVController.cpp.i
+.PHONY : src/TVController.i
+
+# target to preprocess a source file
+src/TVController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/TVController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.i
+.PHONY : src/TVController.cpp.i
+
+src/TVController.s: src/TVController.cpp.s
+.PHONY : src/TVController.s
+
+# target to generate assembly for a file
+src/TVController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/TVController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/TVController.cpp.s
+.PHONY : src/TVController.cpp.s
+
 src/remoteKey.obj: src/remoteKey.cpp.obj
 .PHONY : src/remoteKey.obj
 
@@ -383,6 +410,9 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... src/TVController.obj
+	@echo ... src/TVController.i
+	@echo ... src/TVController.s
 	@echo ... src/remoteKey.obj
 	@echo ... src/remoteKey.i
 	@echo ... src/remoteKey.s

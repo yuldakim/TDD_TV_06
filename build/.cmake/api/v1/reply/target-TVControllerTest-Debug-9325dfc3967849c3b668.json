@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TunerTest.exe"
+			"path" : "TVControllerTest.exe"
 		},
 		{
-			"path" : "TunerTest.pdb"
+			"path" : "TVControllerTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +35,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 34,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -47,7 +47,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 38,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -62,7 +62,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 68,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -157,7 +157,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -176,7 +177,7 @@
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "TunerTest::@6890427a1f51a3e7e1df",
+	"id" : "TVControllerTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -223,13 +224,13 @@
 			"id" : "gmock::@0f7bb11d64f3678238c7"
 		}
 	],
-	"name" : "TunerTest",
-	"nameOnDisk" : "TunerTest.exe",
+	"name" : "TVControllerTest",
+	"nameOnDisk" : "TVControllerTest.exe",
 	"orderDependencies" : 
 	[
 		{
 			"backtrace" : 7,
-			"id" : "TunerTest::@6890427a1f51a3e7e1df"
+			"id" : "TVControllerTest::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -244,7 +245,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -253,13 +255,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/TunerTest.cpp",
+			"path" : "test/TVControllerTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/remoteKey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/TVController.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

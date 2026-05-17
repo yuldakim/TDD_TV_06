@@ -161,7 +161,7 @@ CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=7,8,9 "Built target TunerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=9,10,11 "Built target TunerTest"
 .PHONY : CMakeFiles/TunerTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,7 +178,7 @@ TunerTest: CMakeFiles/TunerTest.dir/rule
 # codegen rule for target.
 CMakeFiles/TunerTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=7,8,9 "Finished codegen for target TunerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=9,10,11 "Finished codegen for target TunerTest"
 .PHONY : CMakeFiles/TunerTest.dir/codegen
 
 # clean rule for target.
@@ -195,12 +195,12 @@ CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFile
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=4,5,6 "Built target TVControllerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=5,6,7,8 "Built target TVControllerTest"
 .PHONY : CMakeFiles/TVControllerTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TVControllerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TVControllerTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 0
 .PHONY : CMakeFiles/TVControllerTest.dir/rule
@@ -212,7 +212,7 @@ TVControllerTest: CMakeFiles/TVControllerTest.dir/rule
 # codegen rule for target.
 CMakeFiles/TVControllerTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=4,5,6 "Finished codegen for target TVControllerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target TVControllerTest"
 .PHONY : CMakeFiles/TVControllerTest.dir/codegen
 
 # clean rule for target.
@@ -229,12 +229,12 @@ CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/FavoriteChannelTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=1,2,3 "Built target FavoriteChannelTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=1,2,3,4 "Built target FavoriteChannelTest"
 .PHONY : CMakeFiles/FavoriteChannelTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FavoriteChannelTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FavoriteChannelTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV_BR\TDD_TV_06\build\CMakeFiles 0
 .PHONY : CMakeFiles/FavoriteChannelTest.dir/rule
@@ -246,7 +246,7 @@ FavoriteChannelTest: CMakeFiles/FavoriteChannelTest.dir/rule
 # codegen rule for target.
 CMakeFiles/FavoriteChannelTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target FavoriteChannelTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target FavoriteChannelTest"
 .PHONY : CMakeFiles/FavoriteChannelTest.dir/codegen
 
 # clean rule for target.
@@ -261,7 +261,7 @@ CMakeFiles/FavoriteChannelTest.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=10,11 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=12,13 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -278,7 +278,7 @@ gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=10,11 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=12,13 "Finished codegen for target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -294,7 +294,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=12,13 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=14,15 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -311,7 +311,7 @@ gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=12,13 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=14,15 "Finished codegen for target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -326,7 +326,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=14,15 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=16,17 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -343,7 +343,7 @@ gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=14,15 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=16,17 "Finished codegen for target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -358,7 +358,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=16,17 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=18,19 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -375,7 +375,7 @@ gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=16,17 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=18,19 "Finished codegen for target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.
