@@ -60,4 +60,36 @@
         * 채널 15를 시청중, 채널 업을 누르면 4로 변경, 다운을 누르면 14로 변경된다.  
   
 ## TO-DO-LIST
-- Test 환경설정
+✅ 1단계: 테스트 코드 작성 및 검증 (TDD)
+[x] 단위 테스트(Unit Test) 구현
+TunerTest: 초기화 상태, 유효 채널 경계값 및 예외 처리 검증
+FavoriteChannelTest: 채널 추가, 토글 삭제, 다중 입력 시 자동 오름차순 정렬 검증
+TVControllerTest: Mock 객체를 활용한 한 자릿수/두 자릿수 입력 및 MENU 키 버퍼 무효화 로직 검증
+
+[x] 기반 알고리즘 검증
+채널 탐색 시 최대 채널(99) 도달 시 0으로 돌아가는 Wrap-around 순환 알고리즘 검증
+다음 선호 채널 스위칭 시 이진 탐색(std::upper_bound) 기반 매핑 예외 케이스 검증
+
+✅ 2단계: 승인 테스트(Approval Test)
+[x] 독립 프로세스 격리 환경에서의 파일 누적 제어
+전체 승인 테스트 사이클의 시작점인 첫 번째 테스트 진입 시 기존 .received.txt 파일을 자동 삭제하도록 구조 단순화
+
+[x] 마침표 테스트 기반의 빌드 자동화 구현
+검증 성공 시(기존 마스터 .approved.txt 파일과 내용 일치 시) 하드디스크의 .received.txt 파일을 자동 삭제(std::remove)하는 로직 구축
+소스 코드 변경이 없을 때 빌드 폴더 내 수신 파편 파일이 남지 않도록 무결성 확보
+
+✅ 3단계: 제품 코드(Production Code) 리팩토링
+[x] remoteKey.h 구조 개선
+불필요한 저작권 및 노이즈 주석 전면 제거
+KEY_NEXT_FAV 문자열 매핑 버그 수정 ("FAV" ➡️ "NEXT_FAV")
+컴파일 효율 향상을 위해 inline을 제거하고 선언과 구현부를 src/remoteKey.cpp로 분리
+
+[x] Tuner.h 인터페이스 정돈
+장황한 Doxygen 스타일 주석 제거 및 가독성 중심 포맷팅 수정
+
+[x] TVController.h 아키텍처 리팩토링
+헤더 내부에 집중되어 있던 거대한 비즈니스 로직(pushButton)을 src/TVController.cpp 소스 파일로 완전히 분리
+불필요한 디버깅용 std::cout 로그 및 설명 주석 제거
+
+[x] 빌드 시스템(CMake) 소스 매핑 최신화
+새로 분리된 src/remoteKey.cpp 및 src/TVController.cpp를 CMakeLists.txt 타깃에 정상 등록하여 의존성 정돈 완료
