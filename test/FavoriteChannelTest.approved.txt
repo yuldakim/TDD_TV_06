@@ -1,0 +1,28 @@
+[S2_1_AddCurrentChannelToFavorites Snapshot]
+Current Channel: 10
+Favorite List  : [10]
+-------------------------------------
+[S2_2_ToggleFavoriteRemoveIfExisted Snapshot]
+Current Channel: 7
+Favorite List  : []
+-------------------------------------
+[S2_3_ComplexSequenceTest Snapshot]
+Current Channel: 6
+Favorite List  : [6, 12, 37]
+-------------------------------------
+[S3_1_NextFavoriteChannel_Normal Snapshot]
+Current Channel: 12
+Favorite List  : [1, 4, 12, 56]
+-------------------------------------
+[S3_2_NextFavoriteChannel_NoChange Snapshot]
+Current Channel: 7
+Favorite List  : [7]
+-------------------------------------
+[S3_3_NextFavoriteChannel_WrapAround Snapshot]
+Current Channel: 1
+Favorite List  : [1, 4, 12, 56]
+-------------------------------------
+[S3_4_NextFavoriteChannel_WhenListIsEmpty Snapshot]
+Current Channel: 23
+Favorite List  : []
+-------------------------------------

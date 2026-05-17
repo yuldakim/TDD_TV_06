@@ -1,0 +1,15 @@
+[S1_1_Press1AndConfirmShouldChangeToChannel1 Result]
+Expected Action Channel: 1
+------------------------------------
+[S1_2_PressMultipleDigitsAndConfirmShouldChangeChannel Result]
+Expected Action Channel: 12
+------------------------------------
+[S1_3_ContinuousInput Result]
+Expected Action Channel: 34
+------------------------------------
+[S1_4_InvalidateOnlyLastDigitAfterAutoChange Result]
+Expected Action Channel: 45
+------------------------------------
+[S1_5_LeadingZeroShouldBeRemoved Result]
+Expected Action Channel: 7
+------------------------------------

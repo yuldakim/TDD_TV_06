@@ -1,0 +1,8 @@
+[testSeekCh10times History Snapshot]
+Initial Channel: 50
+Seek Sequence  : 5 -> 10 -> 15 -> 20 -> 25 -> 30 -> 35 -> 40 -> 45 -> 50
+-------------------------------------
+[testSeekCh10timesAfterSetCH History Snapshot]
+Initial Channel: 49
+Seek Sequence  : 4 -> 9 -> 14 -> 19 -> 24 -> 29 -> 34 -> 39 -> 44 -> 49
+-------------------------------------
