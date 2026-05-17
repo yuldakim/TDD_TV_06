@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj"
+  "CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj.d"
   "CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj"
   "CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj.d"
   "TunerTest.exe"

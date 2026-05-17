@@ -76,24 +76,41 @@ CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj: CMakeFiles/TunerTest.dir/includ
 CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj: C:/DEV_BR/TDD_TV_06/test/TunerTest.cpp
 CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj: CMakeFiles/TunerTest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj -MF CMakeFiles\TunerTest.dir\test\TunerTest.cpp.obj.d -o CMakeFiles\TunerTest.dir\test\TunerTest.cpp.obj -c C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj -MF CMakeFiles\TunerTest.dir\test\TunerTest.cpp.obj.d -o CMakeFiles\TunerTest.dir\test\TunerTest.cpp.obj -c C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp
 
 CMakeFiles/TunerTest.dir/test/TunerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TunerTest.dir/test/TunerTest.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp > CMakeFiles\TunerTest.dir\test\TunerTest.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp > CMakeFiles\TunerTest.dir\test\TunerTest.cpp.i
 
 CMakeFiles/TunerTest.dir/test/TunerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TunerTest.dir/test/TunerTest.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp -o CMakeFiles\TunerTest.dir\test\TunerTest.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\test\TunerTest.cpp -o CMakeFiles\TunerTest.dir\test\TunerTest.cpp.s
+
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj: CMakeFiles/TunerTest.dir/flags.make
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj: CMakeFiles/TunerTest.dir/includes_CXX.rsp
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj: C:/DEV_BR/TDD_TV_06/src/remoteKey.cpp
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj: CMakeFiles/TunerTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj -MF CMakeFiles\TunerTest.dir\src\remoteKey.cpp.obj.d -o CMakeFiles\TunerTest.dir\src\remoteKey.cpp.obj -c C:\DEV_BR\TDD_TV_06\src\remoteKey.cpp
+
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TunerTest.dir/src/remoteKey.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\src\remoteKey.cpp > CMakeFiles\TunerTest.dir\src\remoteKey.cpp.i
+
+CMakeFiles/TunerTest.dir/src/remoteKey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TunerTest.dir/src/remoteKey.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\src\remoteKey.cpp -o CMakeFiles\TunerTest.dir\src\remoteKey.cpp.s
 
 # Object files for target TunerTest
 TunerTest_OBJECTS = \
-"CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj"
+"CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj" \
+"CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj"
 
 # External object files for target TunerTest
 TunerTest_EXTERNAL_OBJECTS =
 
 TunerTest.exe: CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj
+TunerTest.exe: CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj
 TunerTest.exe: CMakeFiles/TunerTest.dir/build.make
 TunerTest.exe: lib/libgtest_main.a
 TunerTest.exe: lib/libgmock.a
@@ -101,7 +118,7 @@ TunerTest.exe: lib/libgtest.a
 TunerTest.exe: CMakeFiles/TunerTest.dir/linkLibs.rsp
 TunerTest.exe: CMakeFiles/TunerTest.dir/objects1.rsp
 TunerTest.exe: CMakeFiles/TunerTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TunerTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TunerTest.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TunerTest.dir\link.txt --verbose=$(VERBOSE)
 	C:\mingw64\bin\cmake.exe -D TEST_TARGET=TunerTest -D TEST_EXECUTABLE=C:/DEV_BR/TDD_TV_06/build/TunerTest.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/DEV_BR/TDD_TV_06/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=TunerTest_TESTS -D CTEST_FILE=C:/DEV_BR/TDD_TV_06/build/TunerTest[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-4.3/Modules/GoogleTestAddTests.cmake
 

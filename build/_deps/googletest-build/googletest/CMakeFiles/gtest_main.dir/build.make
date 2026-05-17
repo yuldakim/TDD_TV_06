@@ -76,15 +76,15 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.ob
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: _deps/googletest-src/googletest/src/gtest_main.cc
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV_BR\TDD_TV_06\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\DEV_BR\TDD_TV_06\build\_deps\googletest-build\googletest && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \

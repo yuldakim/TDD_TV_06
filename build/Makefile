@@ -261,6 +261,36 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/remoteKey.obj: src/remoteKey.cpp.obj
+.PHONY : src/remoteKey.obj
+
+# target to build an object file
+src/remoteKey.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/src/remoteKey.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/remoteKey.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.obj
+.PHONY : src/remoteKey.cpp.obj
+
+src/remoteKey.i: src/remoteKey.cpp.i
+.PHONY : src/remoteKey.i
+
+# target to preprocess a source file
+src/remoteKey.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/src/remoteKey.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/remoteKey.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.i
+.PHONY : src/remoteKey.cpp.i
+
+src/remoteKey.s: src/remoteKey.cpp.s
+.PHONY : src/remoteKey.s
+
+# target to generate assembly for a file
+src/remoteKey.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TunerTest.dir\build.make CMakeFiles/TunerTest.dir/src/remoteKey.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/src/remoteKey.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FavoriteChannelTest.dir\build.make CMakeFiles/FavoriteChannelTest.dir/src/remoteKey.cpp.s
+.PHONY : src/remoteKey.cpp.s
+
 test/FavoriteChannelTest.obj: test/FavoriteChannelTest.cpp.obj
 .PHONY : test/FavoriteChannelTest.obj
 
@@ -353,6 +383,9 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... src/remoteKey.obj
+	@echo ... src/remoteKey.i
+	@echo ... src/remoteKey.s
 	@echo ... test/FavoriteChannelTest.obj
 	@echo ... test/FavoriteChannelTest.i
 	@echo ... test/FavoriteChannelTest.s

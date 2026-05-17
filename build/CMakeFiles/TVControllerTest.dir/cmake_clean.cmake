@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TVControllerTest.dir/src/remoteKey.cpp.obj"
+  "CMakeFiles/TVControllerTest.dir/src/remoteKey.cpp.obj.d"
   "CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj"
   "CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj.d"
   "TVControllerTest.exe"
