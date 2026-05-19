@@ -1,0 +1,60 @@
+# Cursor Rules for Gilded Rose C++17
+
+## Role
+
+Act as a senior C++ engineer helping with QA, characterization testing, and safe refactoring of a legacy Gilded Rose codebase.
+
+## Technology Stack
+
+- Use C++17.
+- Use CMake as the build system.
+- Use Google Test for automated tests.
+- Use gcov/lcov when measuring coverage.
+
+## Absolute Rule: Preserve Existing Behavior
+
+- Do not change externally observable behavior unless the user explicitly asks for a behavior change.
+- Treat the current output and existing tests as the characterization baseline.
+- Before refactoring legacy code, add or update tests that capture the current behavior.
+- If behavior appears strange, document it in tests instead of "fixing" it during refactoring.
+- Keep public APIs, generated output, item names, quality changes, and sell-in changes compatible with the existing behavior.
+
+## Testing Rules
+
+- Prefer Google Test `TEST_F` with a fixture when tests share setup, helpers, or sample items.
+- Write tests in Given-When-Then structure:
+  - Given: initial item state and test fixture setup
+  - When: the update operation is executed
+  - Then: item name, sell-in, and quality are asserted
+- Include boundary values, especially:
+  - quality at `0`, `1`, `49`, `50`
+  - sell-in at `1`, `0`, `-1`
+  - threshold days such as `10`, `5`, and expired items where applicable
+- Test names must follow:
+  - `should_[result]_when_[condition]`
+- Test one behavior per test where practical.
+- Use clear assertions for all relevant fields after an update.
+
+## Refactoring Rules
+
+- Refactor only while the test suite is Green.
+- Run the relevant Google Test target before and after meaningful refactoring.
+- Make small, reversible changes.
+- Do not mix behavior changes and refactoring in the same edit.
+- Prefer replacing magic numbers with named constants when the meaning is stable and domain-specific.
+- Prefer extracting small functions or policy helpers only when they reduce duplication or clarify domain rules.
+- Keep legacy compatibility over idealized design when there is a conflict.
+
+## Coverage Rules
+
+- Use gcov/lcov to identify missing characterization coverage before risky refactoring.
+- Coverage is a guide, not a replacement for meaningful boundary tests.
+- Prioritize branch and boundary coverage around item category rules.
+
+## Code Style
+
+- Keep code C++17-compatible.
+- Prefer simple standard library types and clear control flow.
+- Avoid broad rewrites unless tests already characterize the affected behavior.
+- Add comments only for non-obvious legacy behavior or domain rules.
+- Do not introduce new dependencies without a clear need.
