@@ -1,0 +1,68 @@
+TVController Golden Master
+==========================
+
+[one_digit_ok_commits_channel]
+Keys        : 1 OK
+Console     :
+현재 설정하는 채널 : 1
+Final CH    : 1
+Set History : [1]
+Favorites   : []
+-------------------------------------
+[continuous_digits_commit_every_two_keys]
+Keys        : 1 2 3 4
+Console     :
+현재 설정하는 채널 : 12
+현재 설정하는 채널 : 34
+Final CH    : 34
+Set History : [12, 34]
+Favorites   : []
+-------------------------------------
+[leading_zero_is_normalized]
+Keys        : 0 7
+Console     :
+현재 설정하는 채널 : 7
+Final CH    : 7
+Set History : [7]
+Favorites   : []
+-------------------------------------
+[menu_cancels_only_pending_digit]
+Keys        : 4 5 6 MENU OK
+Console     :
+현재 설정하는 채널 : 45
+Final CH    : 45
+Set History : [45]
+Favorites   : []
+-------------------------------------
+[favorites_toggle_and_remain_sorted]
+Keys        : FAV@12 FAV@8 FAV@37 FAV@8 FAV@6
+Console     :
+(empty)
+Final CH    : 6
+Set History : []
+Favorites   : [6, 12, 37]
+-------------------------------------
+[next_favorite_moves_to_upper_channel]
+Keys        : NEXT_FAV from 6
+Console     :
+(empty)
+Final CH    : 12
+Set History : [12]
+Favorites   : [1, 4, 12, 56]
+-------------------------------------
+[next_favorite_wraps_to_first_channel]
+Keys        : NEXT_FAV from 56
+Console     :
+(empty)
+Final CH    : 1
+Set History : [1]
+Favorites   : [1, 4, 12, 56]
+-------------------------------------
+[next_favorite_without_favorites_is_noop]
+Keys        : NEXT_FAV from 23
+Console     :
+(empty)
+Final CH    : 23
+Set History : []
+Favorites   : []
+-------------------------------------

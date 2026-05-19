@@ -51,25 +51,36 @@ add_executable(FavoriteChannelTest
 )
 target_link_libraries(FavoriteChannelTest GTest::gtest_main GTest::gmock)
 
+add_executable(TVControllerGoldenMasterTest
+    test/TVControllerGoldenMasterTest.cpp
+    src/remoteKey.cpp
+    src/TVController.cpp
+)
+target_link_libraries(TVControllerGoldenMasterTest GTest::gtest_main GTest::gmock)
+target_compile_definitions(TVControllerGoldenMasterTest PRIVATE
+    GOLDEN_MASTER_APPROVED_FILE="${CMAKE_CURRENT_SOURCE_DIR}/test/golden/TVControllerGoldenMaster.approved.txt"
+    GOLDEN_MASTER_RECEIVED_FILE="${CMAKE_CURRENT_BINARY_DIR}/test-output/TVControllerGoldenMaster.received.txt"
+)
 
 # ============================================================
-# ⭐ [Approval Test] 실행 경로 및 자산 복사 설정
+# ⭐ [Approval / Golden Master Test] 실행 경로 및 기준 파일 설정
 # ============================================================
-
-# 테스트가 실행될 때 .approved.txt 파일이 들어있는 위치를 제대로 인식하도록 
-# 실행 디렉터리(Working Directory)를 소스 디렉터리로 강제 지정합니다.
-if(COMMAND gtest_discover_tests)
-    # VS Code 테스트 탐색기나 CTest 환경에서도 경로가 꼬이지 않게 잡아줍니다.
-    set_tests_properties(FavoriteChannelTest PROPERTIES
-        WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/test"
-    )
-endif()
 
 include(GoogleTest)
 
 gtest_discover_tests(TunerTest)
 gtest_discover_tests(TVControllerTest)
 gtest_discover_tests(FavoriteChannelTest)
+gtest_discover_tests(TVControllerGoldenMasterTest
+    WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+)
+
+add_custom_target(update_golden_master
+    COMMAND ${CMAKE_COMMAND} -E env UPDATE_GOLDEN_MASTER=1 $<TARGET_FILE:TVControllerGoldenMasterTest>
+    DEPENDS TVControllerGoldenMasterTest
+    WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+    COMMENT "Regenerating TVController Golden Master approved output"
+)
 
 
 add_custom_target(clear_tuner_received ALL
