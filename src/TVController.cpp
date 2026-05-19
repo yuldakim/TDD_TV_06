@@ -3,6 +3,22 @@
 
 namespace {
 constexpr std::size_t MaxAutoCommitChannelDigits = 2;
+constexpr int FirstChannelAfterUpperBoundary = 1;
+constexpr int LastTwoDigitChannel = 99;
+constexpr int LowestChannel = 0;
+
+void changeChannelBy(Tuner *tuner, int currentChannel, int delta) {
+  const int nextChannel = currentChannel + delta;
+  if (nextChannel > LastTwoDigitChannel) {
+    tuner->setCH(std::to_string(FirstChannelAfterUpperBoundary));
+    return;
+  }
+  if (nextChannel < LowestChannel) {
+    tuner->setCH(std::to_string(LastTwoDigitChannel));
+    return;
+  }
+  tuner->setCH(std::to_string(nextChannel));
+}
 } // namespace
 
 TVController::TVController(Tuner *tuner) : tuner(tuner), processingCH("") {}
@@ -110,6 +126,12 @@ void TVController::dispatchNonDigitKey(remoteKey key) {
     break;
   case remoteKey::KEY_NEXT_FAV:
     moveToNextFavoriteChannel();
+    break;
+  case remoteKey::KEY_CH_UP:
+    changeChannelBy(tuner, currentChannelNumber(), 1);
+    break;
+  case remoteKey::KEY_CH_DOWN:
+    changeChannelBy(tuner, currentChannelNumber(), -1);
     break;
   default:
     break;

@@ -17,7 +17,9 @@ enum class remoteKey {
   KEY_OK,
   KEY_MENU,
   KEY_FAV,
-  KEY_NEXT_FAV
+  KEY_NEXT_FAV,
+  KEY_CH_UP,
+  KEY_CH_DOWN
 };
 
 // ⭕ 구현은 던져버리고 순수하게 선언만 남깁니다. (inline 제거)

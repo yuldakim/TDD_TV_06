@@ -161,3 +161,55 @@ TEST_F(TVControllerChannelChangeTest, UpperBoundaryNinetyNineCanBeSelected) {
   ASSERT_EQ(expectedHistory, tuner.setHistory);
   EXPECT_EQ("99", tuner.currentChannel);
 }
+
+TEST_F(TVControllerChannelChangeTest, ChannelUpIncrementsCurrentChannel) {
+  // Given
+  tuner.currentChannel = "6";
+  const std::vector<std::string> expectedHistory = {"7"};
+
+  // When
+  controller.pushButton(remoteKey::KEY_CH_UP);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("7", tuner.currentChannel);
+}
+
+TEST_F(TVControllerChannelChangeTest, ChannelDownDecrementsCurrentChannel) {
+  // Given
+  tuner.currentChannel = "6";
+  const std::vector<std::string> expectedHistory = {"5"};
+
+  // When
+  controller.pushButton(remoteKey::KEY_CH_DOWN);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("5", tuner.currentChannel);
+}
+
+TEST_F(TVControllerChannelChangeTest, ChannelUpWrapsFromNinetyNineToOne) {
+  // Given
+  tuner.currentChannel = "99";
+  const std::vector<std::string> expectedHistory = {"1"};
+
+  // When
+  controller.pushButton(remoteKey::KEY_CH_UP);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("1", tuner.currentChannel);
+}
+
+TEST_F(TVControllerChannelChangeTest, ChannelDownWrapsFromZeroToNinetyNine) {
+  // Given
+  tuner.currentChannel = "0";
+  const std::vector<std::string> expectedHistory = {"99"};
+
+  // When
+  controller.pushButton(remoteKey::KEY_CH_DOWN);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("99", tuner.currentChannel);
+}

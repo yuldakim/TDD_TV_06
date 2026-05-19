@@ -30,6 +30,10 @@ std::string to_string(remoteKey key) {
     return "FAV";
   case remoteKey::KEY_NEXT_FAV:
     return "NEXT_FAV";
+  case remoteKey::KEY_CH_UP:
+    return "CH_UP";
+  case remoteKey::KEY_CH_DOWN:
+    return "CH_DOWN";
   }
   return "";
 }

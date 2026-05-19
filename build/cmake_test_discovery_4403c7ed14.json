@@ -1,10 +1,10 @@
 {
-  "tests": 10,
+  "tests": 14,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TVControllerChannelChangeTest",
-      "tests": 10,
+      "tests": 14,
       "testsuite": [
         {
           "name": "OneDigitAndOkChangesToChannelOne",
@@ -55,6 +55,26 @@
           "name": "UpperBoundaryNinetyNineCanBeSelected",
           "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerTest.cpp",
           "line": 152
+        },
+        {
+          "name": "ChannelUpIncrementsCurrentChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerTest.cpp",
+          "line": 165
+        },
+        {
+          "name": "ChannelDownDecrementsCurrentChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerTest.cpp",
+          "line": 178
+        },
+        {
+          "name": "ChannelUpWrapsFromNinetyNineToOne",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerTest.cpp",
+          "line": 191
+        },
+        {
+          "name": "ChannelDownWrapsFromZeroToNinetyNine",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerTest.cpp",
+          "line": 204
         }
       ]
     }
