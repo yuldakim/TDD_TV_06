@@ -40,6 +40,7 @@ target_link_libraries(TunerTest GTest::gtest_main GTest::gmock)
 add_executable(TVControllerTest 
     test/TVControllerTest.cpp 
     src/remoteKey.cpp
+    src/FavoriteChannels.cpp
     src/TVController.cpp
 )
 target_link_libraries(TVControllerTest GTest::gtest_main GTest::gmock)
@@ -47,6 +48,7 @@ target_link_libraries(TVControllerTest GTest::gtest_main GTest::gmock)
 add_executable(FavoriteChannelTest 
     test/FavoriteChannelTest.cpp 
     src/remoteKey.cpp
+    src/FavoriteChannels.cpp
     src/TVController.cpp
 )
 target_link_libraries(FavoriteChannelTest GTest::gtest_main GTest::gmock)
@@ -54,6 +56,7 @@ target_link_libraries(FavoriteChannelTest GTest::gtest_main GTest::gmock)
 add_executable(TVControllerGoldenMasterTest
     test/TVControllerGoldenMasterTest.cpp
     src/remoteKey.cpp
+    src/FavoriteChannels.cpp
     src/TVController.cpp
 )
 target_link_libraries(TVControllerGoldenMasterTest GTest::gtest_main GTest::gmock)
