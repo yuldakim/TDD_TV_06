@@ -1,7 +1,5 @@
 #include "Tuner.h"
-#include <fstream>
 #include <gtest/gtest.h>
-#include <sstream>
 #include <stdexcept>
 #include <string>
 #include <vector>
@@ -27,119 +25,159 @@ public:
   }
 };
 
-// 2. 테스트 픽스처 설정
 class TunerFakeTest : public ::testing::Test {
 protected:
   FakeTunerForTunerTest tuner;
-
-public:
-  void verifyTunerApproval(const std::string &testName,
-                           const std::vector<std::string> &seekHistory) {
-    std::string receivedFileName = "../test/TunerTest.received.txt";
-
-    std::stringstream ss;
-    ss << "[" << testName << " History Snapshot]\n";
-    ss << "Initial Channel: " << tuner.getCurrentCH() << "\n";
-    ss << "Seek Sequence  : ";
-    for (size_t i = 0; i < seekHistory.size(); ++i) {
-      ss << seekHistory[i];
-      if (i < seekHistory.size() - 1)
-        ss << " -> ";
-    }
-    ss << "\n-------------------------------------\n";
-
-    std::ofstream recFile(receivedFileName, std::ios::app);
-    recFile << ss.str();
-    recFile.close();
-  }
 };
 
-TEST_F(TunerFakeTest, initChannel) {
-  int initCh = std::stoi(tuner.getCurrentCH());
-  EXPECT_EQ(0, initCh);
-  EXPECT_TRUE(initCh >= 0 && initCh <= 99);
+TEST_F(TunerFakeTest, SearchMovesFromInitialChannelToNextAvailableChannel) {
+  // Given
+  ASSERT_EQ("0", tuner.getCurrentCH());
+
+  // When
+  const std::string foundChannel = tuner.seekCH();
+
+  // Then
+  EXPECT_EQ("5", foundChannel);
+  EXPECT_EQ("5", tuner.getCurrentCH());
 }
 
-TEST_F(TunerFakeTest, testSetChForValidChannel) {
-  std::vector<std::string> validChannels = {"0", "4", "5", "12", "99"};
+TEST_F(TunerFakeTest, SearchCanBeRepeatedAndChangesChannelEachTime) {
+  // Given
+  const std::vector<std::string> expected = {"5", "10", "15"};
+  std::vector<std::string> actual;
 
-  for (const auto &ch : validChannels) {
-    tuner.setCH(ch);
-    EXPECT_EQ(ch, tuner.getCurrentCH());
-  }
+  // When
+  actual.push_back(tuner.seekCH());
+  actual.push_back(tuner.seekCH());
+  actual.push_back(tuner.seekCH());
+
+  // Then
+  ASSERT_EQ(expected, actual);
+  EXPECT_EQ("15", tuner.getCurrentCH());
 }
 
-TEST_F(TunerFakeTest, testSetChForInvalidChannel) {
-  std::vector<std::string> invalidChannels = {"-12", "100", "9999"};
-
-  for (const auto &ch : invalidChannels) {
-    EXPECT_THROW(tuner.setCH(ch), std::invalid_argument);
-  }
-}
-
-TEST_F(TunerFakeTest, testSeekCh10times) {
-  std::string receivedFileName = "../test/TunerTest.received.txt";
-  std::remove(receivedFileName.c_str());
-
-  std::vector<std::string> seekChannels;
-
-  for (int i = 0; i < 10; i++) {
-    std::string seekCh = tuner.seekCH();
-    int ch = std::stoi(seekCh);
-
-    EXPECT_TRUE(0 <= ch && ch <= 99);
-    seekChannels.push_back(seekCh);
-  }
-  EXPECT_EQ(10u, seekChannels.size());
-
-  verifyTunerApproval("testSeekCh10times", seekChannels);
-}
-
-TEST_F(TunerFakeTest, testSeekCh10timesAfterSetCH) {
+TEST_F(TunerFakeTest, SearchWrapsAfterUpperBoundary) {
+  // Given
   tuner.setCH("99");
 
-  std::vector<std::string> seekChannels;
-  for (int i = 0; i < 10; i++) {
-    std::string seekCh = tuner.seekCH();
-    int ch = std::stoi(seekCh);
+  // When
+  const std::string foundChannel = tuner.seekCH();
 
-    EXPECT_TRUE(0 <= ch && ch <= 99);
-    seekChannels.push_back(seekCh);
-  }
-  EXPECT_EQ(10u, seekChannels.size());
-
-  verifyTunerApproval("testSeekCh10timesAfterSetCH", seekChannels);
+  // Then
+  EXPECT_EQ("4", foundChannel);
+  EXPECT_EQ("4", tuner.getCurrentCH());
 }
 
-TEST_F(TunerFakeTest, ZZZ_FinalTunerApprovalVerification) {
-  std::string approvedFileName = "../test/TunerTest.approved.txt";
-  std::string receivedFileName = "../test/TunerTest.received.txt";
+TEST_F(TunerFakeTest, SearchResultAlwaysStaysWithinChannelBoundary) {
+  // Given
+  constexpr int searchCount = 25;
 
-  std::ofstream forceFlush(receivedFileName, std::ios::app);
-  forceFlush.close();
+  // When & Then
+  for (int i = 0; i < searchCount; ++i) {
+    const int foundChannel = std::stoi(tuner.seekCH());
+    EXPECT_EQ(true, 0 <= foundChannel && foundChannel <= 99);
+  }
+}
 
-  std::ifstream recFile(receivedFileName);
-  std::stringstream recStream;
-  recStream << recFile.rdbuf();
-  recFile.close();
+TEST_F(TunerFakeTest, SearchAfterExplicitChannelChangeUsesCurrentChannel) {
+  // Given
+  tuner.setCH("20");
 
-  std::ifstream appFile(approvedFileName);
-  if (!appFile.is_open()) {
-    FAIL()
-        << "\n[Approval Alert] 통합 승인 파일(TunerTest.approved.txt)이 "
-           "없습니다!\n"
-        << "test/ 폴더에 새로 뽑힌 [TunerTest.received.txt] 내용을 검토하신 "
-           "후,\n"
-        << "문제가 없다면 파일명을 [TunerTest.approved.txt]로 변경해 주세요.\n";
+  // When
+  const std::string foundChannel = tuner.seekCH();
+
+  // Then
+  EXPECT_EQ("25", foundChannel);
+  EXPECT_EQ("25", tuner.getCurrentCH());
+}
+
+TEST_F(TunerFakeTest, GetCurrentChannelReturnsInitialChannel) {
+  // Given
+  const std::string expectedChannel = "0";
+
+  // When
+  const std::string currentChannel = tuner.getCurrentCH();
+
+  // Then
+  EXPECT_EQ(expectedChannel, currentChannel);
+}
+
+TEST_F(TunerFakeTest, GetCurrentChannelReturnsLowerBoundaryAfterSet) {
+  // Given
+  tuner.setCH("0");
+
+  // When
+  const std::string currentChannel = tuner.getCurrentCH();
+
+  // Then
+  EXPECT_EQ("0", currentChannel);
+}
+
+TEST_F(TunerFakeTest, GetCurrentChannelReturnsUpperBoundaryAfterSet) {
+  // Given
+  tuner.setCH("99");
+
+  // When
+  const std::string currentChannel = tuner.getCurrentCH();
+
+  // Then
+  EXPECT_EQ("99", currentChannel);
+}
+
+TEST_F(TunerFakeTest, GetCurrentChannelReflectsLastValidSetChannel) {
+  // Given
+  const std::vector<std::string> validChannels = {"4", "5", "12"};
+
+  // When
+  for (const auto &channel : validChannels) {
+    tuner.setCH(channel);
   }
 
-  std::stringstream appStream;
-  appStream << appFile.rdbuf();
-  appFile.close();
+  // Then
+  EXPECT_EQ("12", tuner.getCurrentCH());
+}
 
-  if (appStream.str() == recStream.str()) {
-    std::remove(receivedFileName.c_str());
+TEST_F(TunerFakeTest, GetCurrentChannelIsUnchangedAfterInvalidSetFails) {
+  // Given
+  tuner.setCH("12");
+
+  // When
+  EXPECT_THROW(tuner.setCH("100"), std::invalid_argument);
+
+  // Then
+  EXPECT_EQ("12", tuner.getCurrentCH());
+}
+
+TEST_F(TunerFakeTest, InvalidChannelBelowLowerBoundaryIsRejected) {
+  // Given
+  const std::string invalidChannel = "-1";
+
+  // When
+  EXPECT_THROW(tuner.setCH(invalidChannel), std::invalid_argument);
+
+  // Then
+  EXPECT_EQ("0", tuner.getCurrentCH());
+}
+
+TEST_F(TunerFakeTest, InvalidChannelAboveUpperBoundaryIsRejected) {
+  // Given
+  const std::string invalidChannel = "100";
+
+  // When
+  EXPECT_THROW(tuner.setCH(invalidChannel), std::invalid_argument);
+
+  // Then
+  EXPECT_EQ("0", tuner.getCurrentCH());
+}
+
+TEST_F(TunerFakeTest, ValidChannelsCanBeSetAndQueriedIndividually) {
+  // Given
+  const std::vector<std::string> validChannels = {"0", "4", "5", "12", "99"};
+
+  // When & Then
+  for (const auto &channel : validChannels) {
+    tuner.setCH(channel);
+    EXPECT_EQ(channel, tuner.getCurrentCH());
   }
-
-  EXPECT_EQ(appStream.str(), recStream.str());
 }

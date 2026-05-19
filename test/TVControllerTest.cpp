@@ -1,127 +1,163 @@
 #include "TVController.h"
 #include "Tuner.h"
-#include <fstream>
-#include <gmock/gmock.h>
 #include <gtest/gtest.h>
-#include <sstream>
 #include <string>
+#include <vector>
 
-class MockTunerForController : public Tuner {
+class RecordingTunerForController : public Tuner {
 public:
-  MOCK_METHOD(std::string, seekCH, (), (override));
-  MOCK_METHOD(void, setCH, (const std::string &ch), (override));
-  MOCK_METHOD(std::string, getCurrentCH, (), (override));
+  std::string currentChannel = "0";
+  std::vector<std::string> setHistory;
+
+  std::string seekCH() override { return currentChannel; }
+
+  void setCH(const std::string &ch) override {
+    currentChannel = ch;
+    setHistory.push_back(ch);
+  }
+
+  std::string getCurrentCH() override { return currentChannel; }
 };
 
-void verifyTVControllerApproval(const std::string &testName,
-                                const std::string &finalTargetCh) {
-  std::string receivedFileName = "../test/TVControllerTest.received.txt";
+class TVControllerChannelChangeTest : public ::testing::Test {
+protected:
+  RecordingTunerForController tuner;
+  TVController controller{&tuner};
+};
 
-  std::ofstream recFile(receivedFileName, std::ios::app);
-  recFile << "[" << testName << " Result]\n";
-  recFile << "Expected Action Channel: " << finalTargetCh << "\n";
-  recFile << "------------------------------------\n";
-  recFile.close();
-}
+TEST_F(TVControllerChannelChangeTest, OneDigitAndOkChangesToChannelOne) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"1"};
 
-TEST(TVControllerTest, Press1AndConfirmShouldChangeToChannel1) {
-  std::string receivedFileName = "../test/TVControllerTest.received.txt";
-  std::remove(receivedFileName.c_str());
-
-  MockTunerForController mockTuner;
-  EXPECT_CALL(mockTuner, setCH("1")).Times(1);
-
-  TVController controller(&mockTuner);
+  // When
   controller.pushButton(remoteKey::KEY_1);
   controller.pushButton(remoteKey::KEY_OK);
 
-  verifyTVControllerApproval("S1_1_Press1AndConfirmShouldChangeToChannel1",
-                             "1");
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("1", tuner.currentChannel);
 }
 
-TEST(TVControllerTest, PressMultipleDigitsAndConfirmShouldChangeChannel) {
-  MockTunerForController mockTuner;
-  EXPECT_CALL(mockTuner, setCH("12")).Times(1);
+TEST_F(TVControllerChannelChangeTest, TwoDigitsChangeImmediately) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"12"};
 
-  TVController controller(&mockTuner);
+  // When
+  controller.pushButton(remoteKey::KEY_1);
+  controller.pushButton(remoteKey::KEY_2);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("12", tuner.currentChannel);
+}
+
+TEST_F(TVControllerChannelChangeTest, OkAfterTwoDigitAutoChangeDoesNothing) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"12"};
+
+  // When
   controller.pushButton(remoteKey::KEY_1);
   controller.pushButton(remoteKey::KEY_2);
   controller.pushButton(remoteKey::KEY_OK);
 
-  verifyTVControllerApproval(
-      "S1_2_PressMultipleDigitsAndConfirmShouldChangeChannel", "12");
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("12", tuner.currentChannel);
 }
 
-TEST(TVControllerTest, S1_3_ContinuousInput) {
-  MockTunerForController mockTuner;
-  EXPECT_CALL(mockTuner, setCH("12")).Times(1);
-  EXPECT_CALL(mockTuner, setCH("34")).Times(1);
+TEST_F(TVControllerChannelChangeTest, ContinuousDigitsChangeEveryTwoDigits) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"12", "34"};
 
-  TVController controller(&mockTuner);
+  // When
   controller.pushButton(remoteKey::KEY_1);
   controller.pushButton(remoteKey::KEY_2);
   controller.pushButton(remoteKey::KEY_3);
   controller.pushButton(remoteKey::KEY_4);
 
-  verifyTVControllerApproval("S1_3_ContinuousInput", "34");
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("34", tuner.currentChannel);
 }
 
-TEST(TVControllerTest, S1_4_InvalidateOnlyLastDigitAfterAutoChange) {
-  MockTunerForController mockTuner;
-  EXPECT_CALL(mockTuner, setCH("45")).Times(1);
-  EXPECT_CALL(mockTuner, setCH("6")).Times(0);
+TEST_F(TVControllerChannelChangeTest, MenuCancelsPendingOneDigitInput) {
+  // Given
+  const std::vector<std::string> expectedHistory = {};
 
-  TVController controller(&mockTuner);
+  // When
+  controller.pushButton(remoteKey::KEY_6);
+  controller.pushButton(remoteKey::KEY_MENU);
+  controller.pushButton(remoteKey::KEY_OK);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("0", tuner.currentChannel);
+}
+
+TEST_F(TVControllerChannelChangeTest, MenuCancelsOnlyUncommittedDigit) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"45"};
+
+  // When
   controller.pushButton(remoteKey::KEY_4);
   controller.pushButton(remoteKey::KEY_5);
   controller.pushButton(remoteKey::KEY_6);
   controller.pushButton(remoteKey::KEY_MENU);
   controller.pushButton(remoteKey::KEY_OK);
 
-  verifyTVControllerApproval("S1_4_InvalidateOnlyLastDigitAfterAutoChange",
-                             "45");
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("45", tuner.currentChannel);
 }
 
-TEST(TVControllerTest, S1_5_LeadingZeroShouldBeRemoved) {
-  MockTunerForController mockTuner;
-  EXPECT_CALL(mockTuner, setCH("7")).Times(1);
+TEST_F(TVControllerChannelChangeTest, LeadingZeroIsNormalized) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"7"};
 
-  TVController controller(&mockTuner);
+  // When
   controller.pushButton(remoteKey::KEY_0);
   controller.pushButton(remoteKey::KEY_7);
 
-  verifyTVControllerApproval("S1_5_LeadingZeroShouldBeRemoved", "7");
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("7", tuner.currentChannel);
 }
 
-TEST(TVControllerTest, ZZZ_FinalApprovalVerification) {
-  std::string approvedFileName = "../test/TVControllerTest.approved.txt";
-  std::string receivedFileName = "../test/TVControllerTest.received.txt";
+TEST_F(TVControllerChannelChangeTest, LowerBoundaryZeroCanBeSelectedByTwoZeros) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"0"};
 
-  std::ofstream forceFlush(receivedFileName, std::ios::app);
-  forceFlush.close();
+  // When
+  controller.pushButton(remoteKey::KEY_0);
+  controller.pushButton(remoteKey::KEY_0);
 
-  std::ifstream recFile(receivedFileName);
-  std::stringstream recStream;
-  recStream << recFile.rdbuf();
-  recFile.close();
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("0", tuner.currentChannel);
+}
 
-  std::ifstream appFile(approvedFileName);
-  if (!appFile.is_open()) {
-    FAIL() << "\n[Approval Alert] 통합 승인 "
-              "파일(TVControllerTest.approved.txt)이 없습니다!\n"
-           << "test/ 폴더에 새로 뽑힌 [TVControllerTest.received.txt] 내용을 "
-              "검토하신 후,\n"
-           << "문제가 없다면 파일명을 [TVControllerTest.approved.txt]로 변경해 "
-              "주세요.\n";
-  }
+TEST_F(TVControllerChannelChangeTest, LowerBoundaryZeroCanBeConfirmedByOk) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"0"};
 
-  std::stringstream appStream;
-  appStream << appFile.rdbuf();
-  appFile.close();
+  // When
+  controller.pushButton(remoteKey::KEY_0);
+  controller.pushButton(remoteKey::KEY_OK);
 
-  if (appStream.str() == recStream.str()) {
-    std::remove(receivedFileName.c_str());
-  }
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("0", tuner.currentChannel);
+}
 
-  EXPECT_EQ(appStream.str(), recStream.str());
+TEST_F(TVControllerChannelChangeTest, UpperBoundaryNinetyNineCanBeSelected) {
+  // Given
+  const std::vector<std::string> expectedHistory = {"99"};
+
+  // When
+  controller.pushButton(remoteKey::KEY_9);
+  controller.pushButton(remoteKey::KEY_9);
+
+  // Then
+  ASSERT_EQ(expectedHistory, tuner.setHistory);
+  EXPECT_EQ("99", tuner.currentChannel);
 }

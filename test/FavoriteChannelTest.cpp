@@ -1,8 +1,8 @@
 #include "TVController.h"
 #include "Tuner.h"
-#include <fstream>
 #include <gtest/gtest.h>
-#include <sstream>
+#include <string>
+#include <vector>
 
 class FakeTunerForFav : public Tuner {
 public:
@@ -18,164 +18,161 @@ public:
 class FavoriteChannelTest : public ::testing::Test {
 protected:
   FakeTunerForFav tuner;
-  TVController *controller = nullptr;
+  TVController controller{&tuner};
 
-  void SetUp() override { controller = new TVController(&tuner); }
+  void toggleFavoriteAt(const std::string &channel) {
+    tuner.currentChannel = channel;
+    controller.pushButton(remoteKey::KEY_FAV);
+  }
 
-  void TearDown() override { delete controller; }
-
-public:
-  void verifyApproval(const std::string &testName) {
-    std::string receivedFileName = "../test/FavoriteChannelTest.received.txt";
-
-    std::stringstream ss;
-    auto favs = controller->getFavorites();
-    ss << "[" << testName << " Snapshot]\n";
-    ss << "Current Channel: " << tuner.currentChannel << "\n";
-    ss << "Favorite List  : [";
-    for (size_t i = 0; i < favs.size(); ++i) {
-      ss << favs[i] << (i < favs.size() - 1 ? ", " : "");
+  void addFavorites(const std::vector<std::string> &channels) {
+    for (const auto &channel : channels) {
+      toggleFavoriteAt(channel);
     }
-    ss << "]\n";
-    ss << "-------------------------------------\n";
-
-    std::ofstream recFile(receivedFileName, std::ios::app);
-    recFile << ss.str();
-    recFile.close();
   }
 };
 
 TEST_F(FavoriteChannelTest, S2_1_AddCurrentChannelToFavorites) {
-  std::string receivedFileName = "../test/FavoriteChannelTest.received.txt";
-  std::remove(receivedFileName.c_str());
-
+  // Given
   tuner.currentChannel = "10";
-  controller->pushButton(remoteKey::KEY_FAV);
 
-  std::vector<int> favs = controller->getFavorites();
-  ASSERT_EQ(1, favs.size());
-  EXPECT_EQ(10, favs[0]);
+  // When
+  controller.pushButton(remoteKey::KEY_FAV);
 
-  verifyApproval("S2_1_AddCurrentChannelToFavorites");
+  // Then
+  const std::vector<int> expected = {10};
+  ASSERT_EQ(expected, controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S2_2_ToggleFavoriteRemoveIfExisted) {
-  tuner.currentChannel = "7";
-  controller->pushButton(remoteKey::KEY_FAV);
-  ASSERT_EQ(1, controller->getFavorites().size());
+  // Given
+  toggleFavoriteAt("7");
+  ASSERT_EQ(std::vector<int>{7}, controller.getFavorites());
 
-  controller->pushButton(remoteKey::KEY_FAV);
-  EXPECT_EQ(0, controller->getFavorites().size());
+  // When
+  controller.pushButton(remoteKey::KEY_FAV);
 
-  verifyApproval("S2_2_ToggleFavoriteRemoveIfExisted");
+  // Then
+  EXPECT_EQ(std::vector<int>{}, controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S2_3_ComplexSequenceTest) {
-  tuner.currentChannel = "12";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "8";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "37";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "8";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "6";
-  controller->pushButton(remoteKey::KEY_FAV);
+  // Given
+  const std::vector<int> expected = {6, 12, 37};
 
-  std::vector<int> favs = controller->getFavorites();
-  ASSERT_EQ(3, favs.size());
-  EXPECT_EQ(6, favs[0]);
-  EXPECT_EQ(12, favs[1]);
-  EXPECT_EQ(37, favs[2]);
+  // When
+  addFavorites({"12", "8", "37", "8", "6"});
 
-  verifyApproval("S2_3_ComplexSequenceTest");
+  // Then
+  ASSERT_EQ(expected, controller.getFavorites());
+}
+
+TEST_F(FavoriteChannelTest, S2_4_FavoritesRemainSortedAfterReverseInsertion) {
+  // Given
+  const std::vector<int> expected = {3, 21, 99};
+
+  // When
+  addFavorites({"99", "21", "3"});
+
+  // Then
+  ASSERT_EQ(expected, controller.getFavorites());
+}
+
+TEST_F(FavoriteChannelTest, S2_5_BoundaryChannelsCanBeFavorites) {
+  // Given
+  const std::vector<int> expected = {0, 99};
+
+  // When
+  addFavorites({"0", "99"});
+
+  // Then
+  ASSERT_EQ(expected, controller.getFavorites());
+}
+
+TEST_F(FavoriteChannelTest, S2_6_RemovingOneFavoriteKeepsOthersSorted) {
+  // Given
+  addFavorites({"30", "10", "20"});
+  ASSERT_EQ((std::vector<int>{10, 20, 30}), controller.getFavorites());
+
+  // When
+  toggleFavoriteAt("20");
+
+  // Then
+  EXPECT_EQ((std::vector<int>{10, 30}), controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S3_1_NextFavoriteChannel_Normal) {
-  tuner.currentChannel = "1";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "4";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "12";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "56";
-  controller->pushButton(remoteKey::KEY_FAV);
-
+  // Given
+  addFavorites({"1", "4", "12", "56"});
   tuner.currentChannel = "6";
-  controller->pushButton(remoteKey::KEY_NEXT_FAV);
 
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
+
+  // Then
   EXPECT_EQ("12", tuner.currentChannel);
-
-  verifyApproval("S3_1_NextFavoriteChannel_Normal");
+  EXPECT_EQ((std::vector<int>{1, 4, 12, 56}), controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S3_2_NextFavoriteChannel_NoChange) {
-  tuner.currentChannel = "7";
-  controller->pushButton(remoteKey::KEY_FAV);
+  // Given
+  toggleFavoriteAt("7");
 
-  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
 
+  // Then
   EXPECT_EQ("7", tuner.currentChannel);
-
-  verifyApproval("S3_2_NextFavoriteChannel_NoChange");
+  EXPECT_EQ(std::vector<int>{7}, controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S3_3_NextFavoriteChannel_WrapAround) {
-  tuner.currentChannel = "1";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "4";
-  controller->pushButton(remoteKey::KEY_FAV);
-  tuner.currentChannel = "12";
-  controller->pushButton(remoteKey::KEY_FAV);
+  // Given
+  addFavorites({"1", "4", "12", "56"});
   tuner.currentChannel = "56";
-  controller->pushButton(remoteKey::KEY_FAV);
 
-  tuner.currentChannel = "56";
-  controller->pushButton(remoteKey::KEY_NEXT_FAV);
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
 
+  // Then
   EXPECT_EQ("1", tuner.currentChannel);
-
-  verifyApproval("S3_3_NextFavoriteChannel_WrapAround");
+  EXPECT_EQ((std::vector<int>{1, 4, 12, 56}), controller.getFavorites());
 }
 
 TEST_F(FavoriteChannelTest, S3_4_NextFavoriteChannel_WhenListIsEmpty) {
+  // Given
   tuner.currentChannel = "23";
-  controller->pushButton(remoteKey::KEY_NEXT_FAV);
 
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
+
+  // Then
   EXPECT_EQ("23", tuner.currentChannel);
-
-  verifyApproval("S3_4_NextFavoriteChannel_WhenListIsEmpty");
+  EXPECT_EQ(std::vector<int>{}, controller.getFavorites());
 }
 
-TEST_F(FavoriteChannelTest, ZZZ_FinalFavoriteChannelApprovalVerification) {
-  std::string approvedFileName = "../test/FavoriteChannelTest.approved.txt";
-  std::string receivedFileName = "../test/FavoriteChannelTest.received.txt";
+TEST_F(FavoriteChannelTest, S3_5_NextFavoriteFromValueBelowAllMovesToFirst) {
+  // Given
+  addFavorites({"10", "20", "30"});
+  tuner.currentChannel = "0";
 
-  std::ofstream forceFlush(receivedFileName, std::ios::app);
-  forceFlush.close();
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
 
-  std::ifstream recFile(receivedFileName);
-  std::stringstream recStream;
-  recStream << recFile.rdbuf();
-  recFile.close();
+  // Then
+  EXPECT_EQ("10", tuner.currentChannel);
+  EXPECT_EQ((std::vector<int>{10, 20, 30}), controller.getFavorites());
+}
 
-  std::ifstream appFile(approvedFileName);
-  if (!appFile.is_open()) {
-    FAIL() << "\n[Approval Alert] 통합 승인 "
-              "파일(FavoriteChannelTest.approved.txt)이 없습니다!\n"
-           << "test/ 폴더에 새로 뽑힌 [FavoriteChannelTest.received.txt] "
-              "내용을 검토하신 후,\n"
-           << "문제가 없다면 파일명을 [FavoriteChannelTest.approved.txt]로 "
-              "변경해 주세요.\n";
-  }
+TEST_F(FavoriteChannelTest, S3_6_NextFavoriteFromGapMovesToUpperChannel) {
+  // Given
+  addFavorites({"10", "20", "30"});
+  tuner.currentChannel = "15";
 
-  std::stringstream appStream;
-  appStream << appFile.rdbuf();
-  appFile.close();
+  // When
+  controller.pushButton(remoteKey::KEY_NEXT_FAV);
 
-  if (appStream.str() == recStream.str()) {
-    std::remove(receivedFileName.c_str());
-  }
-
-  EXPECT_EQ(appStream.str(), recStream.str());
+  // Then
+  EXPECT_EQ("20", tuner.currentChannel);
+  EXPECT_EQ((std::vector<int>{10, 20, 30}), controller.getFavorites());
 }
