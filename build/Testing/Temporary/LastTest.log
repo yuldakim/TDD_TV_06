@@ -1,19 +1,19 @@
-Start testing: May 17 15:55 ���ѹα� ǥ�ؽ�
+Start testing: May 19 14:23 대한민국 표준시
 ----------------------------------------------------------
-1/20 Testing: TunerFakeTest.initChannel
-1/20 Test: TunerFakeTest.initChannel
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.initChannel" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.initChannel" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+1/36 Testing: TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel
+1/36 Test: TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.initChannel
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.initChannel
-[       OK ] TunerFakeTest.initChannel (0 ms)
+[ RUN      ] TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel
+[       OK ] TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel (0 ms)
 [----------] 1 test from TunerFakeTest (0 ms total)
 
 [----------] Global test environment tear-down
@@ -23,24 +23,78 @@ Note: Google Test filter = TunerFakeTest.initChannel
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerFakeTest.initChannel" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.initChannel" time elapsed: 00:00:00
+"TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.SearchMovesFromInitialChannelToNextAvailableChannel" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/20 Testing: TunerFakeTest.testSetChForValidChannel
-2/20 Test: TunerFakeTest.testSetChForValidChannel
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSetChForValidChannel" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.testSetChForValidChannel" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+2/36 Testing: TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime
+2/36 Test: TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.testSetChForValidChannel
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.testSetChForValidChannel
-[       OK ] TunerFakeTest.testSetChForValidChannel (0 ms)
+[ RUN      ] TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime
+[       OK ] TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.SearchCanBeRepeatedAndChangesChannelEachTime" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/36 Testing: TunerFakeTest.SearchWrapsAfterUpperBoundary
+3/36 Test: TunerFakeTest.SearchWrapsAfterUpperBoundary
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.SearchWrapsAfterUpperBoundary" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.SearchWrapsAfterUpperBoundary" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.SearchWrapsAfterUpperBoundary
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.SearchWrapsAfterUpperBoundary
+[       OK ] TunerFakeTest.SearchWrapsAfterUpperBoundary (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.SearchWrapsAfterUpperBoundary" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.SearchWrapsAfterUpperBoundary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/36 Testing: TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary
+4/36 Test: TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary
+[       OK ] TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary (0 ms)
 [----------] 1 test from TunerFakeTest (0 ms total)
 
 [----------] Global test environment tear-down
@@ -50,24 +104,186 @@ Note: Google Test filter = TunerFakeTest.testSetChForValidChannel
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerFakeTest.testSetChForValidChannel" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.testSetChForValidChannel" time elapsed: 00:00:00
+"TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.SearchResultAlwaysStaysWithinChannelBoundary" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/20 Testing: TunerFakeTest.testSetChForInvalidChannel
-3/20 Test: TunerFakeTest.testSetChForInvalidChannel
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSetChForInvalidChannel" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.testSetChForInvalidChannel" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+5/36 Testing: TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel
+5/36 Test: TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.testSetChForInvalidChannel
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.testSetChForInvalidChannel
-[       OK ] TunerFakeTest.testSetChForInvalidChannel (0 ms)
+[ RUN      ] TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel
+[       OK ] TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.SearchAfterExplicitChannelChangeUsesCurrentChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/36 Testing: TunerFakeTest.GetCurrentChannelReturnsInitialChannel
+6/36 Test: TunerFakeTest.GetCurrentChannelReturnsInitialChannel
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.GetCurrentChannelReturnsInitialChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.GetCurrentChannelReturnsInitialChannel" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.GetCurrentChannelReturnsInitialChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.GetCurrentChannelReturnsInitialChannel
+[       OK ] TunerFakeTest.GetCurrentChannelReturnsInitialChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.GetCurrentChannelReturnsInitialChannel" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.GetCurrentChannelReturnsInitialChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/36 Testing: TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet
+7/36 Test: TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet
+[       OK ] TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.GetCurrentChannelReturnsLowerBoundaryAfterSet" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/36 Testing: TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet
+8/36 Test: TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet
+[       OK ] TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.GetCurrentChannelReturnsUpperBoundaryAfterSet" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/36 Testing: TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel
+9/36 Test: TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel
+[       OK ] TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.GetCurrentChannelReflectsLastValidSetChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/36 Testing: TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails
+10/36 Test: TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails
+[       OK ] TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails (0 ms)
+[----------] 1 test from TunerFakeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.GetCurrentChannelIsUnchangedAfterInvalidSetFails" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/36 Testing: TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected
+11/36 Test: TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TunerFakeTest
+[ RUN      ] TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected
+[       OK ] TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected (0 ms)
 [----------] 1 test from TunerFakeTest (0 ms total)
 
 [----------] Global test environment tear-down
@@ -77,267 +293,352 @@ Note: Google Test filter = TunerFakeTest.testSetChForInvalidChannel
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerFakeTest.testSetChForInvalidChannel" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.testSetChForInvalidChannel" time elapsed: 00:00:00
+"TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.InvalidChannelBelowLowerBoundaryIsRejected" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/20 Testing: TunerFakeTest.testSeekCh10times
-4/20 Test: TunerFakeTest.testSeekCh10times
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSeekCh10times" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.testSeekCh10times" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+12/36 Testing: TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected
+12/36 Test: TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.testSeekCh10times
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.testSeekCh10times
-[       OK ] TunerFakeTest.testSeekCh10times (0 ms)
+[ RUN      ] TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected
+[       OK ] TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected (0 ms)
 [----------] 1 test from TunerFakeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerFakeTest.testSeekCh10times" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.testSeekCh10times" time elapsed: 00:00:00
+"TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.InvalidChannelAboveUpperBoundaryIsRejected" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/20 Testing: TunerFakeTest.testSeekCh10timesAfterSetCH
-5/20 Test: TunerFakeTest.testSeekCh10timesAfterSetCH
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.testSeekCh10timesAfterSetCH" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.testSeekCh10timesAfterSetCH" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+13/36 Testing: TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually
+13/36 Test: TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually
+Command: "C:/Users/jyk17/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.testSeekCh10timesAfterSetCH
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.testSeekCh10timesAfterSetCH
-[       OK ] TunerFakeTest.testSeekCh10timesAfterSetCH (0 ms)
+[ RUN      ] TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually
+[       OK ] TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually (0 ms)
 [----------] 1 test from TunerFakeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerFakeTest.testSeekCh10timesAfterSetCH" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.testSeekCh10timesAfterSetCH" time elapsed: 00:00:00
+"TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually" end time: May 19 14:23 대한민국 표준시
+"TunerFakeTest.ValidChannelsCanBeSetAndQueriedIndividually" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/20 Testing: TunerFakeTest.ZZZ_FinalTunerApprovalVerification
-6/20 Test: TunerFakeTest.ZZZ_FinalTunerApprovalVerification
-Command: "C:/DEV_BR/TDD_TV_06/build/TunerTest.exe" "--gtest_filter=TunerFakeTest.ZZZ_FinalTunerApprovalVerification" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+14/36 Testing: TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne
+14/36 Test: TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TunerFakeTest.ZZZ_FinalTunerApprovalVerification
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from TunerFakeTest
-[ RUN      ] TunerFakeTest.ZZZ_FinalTunerApprovalVerification
-[       OK ] TunerFakeTest.ZZZ_FinalTunerApprovalVerification (0 ms)
-[----------] 1 test from TunerFakeTest (0 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 1 test.
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TunerFakeTest.ZZZ_FinalTunerApprovalVerification" time elapsed: 00:00:00
-----------------------------------------------------------
-
-7/20 Testing: TVControllerTest.Press1AndConfirmShouldChangeToChannel1
-7/20 Test: TVControllerTest.Press1AndConfirmShouldChangeToChannel1
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.Press1AndConfirmShouldChangeToChannel1" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
-Output:
-----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.Press1AndConfirmShouldChangeToChannel1
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.Press1AndConfirmShouldChangeToChannel1
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne
 현재 설정하는 채널 : 1
-[       OK ] TVControllerTest.Press1AndConfirmShouldChangeToChannel1 (1 ms)
-[----------] 1 test from TVControllerTest (1 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
-[  PASSED  ] 1 test.
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.Press1AndConfirmShouldChangeToChannel1" time elapsed: 00:00:00
-----------------------------------------------------------
-
-8/20 Testing: TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
-8/20 Test: TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
-Output:
-----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel
-현재 설정하는 채널 : 12
-[       OK ] TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel (0 ms)
-[----------] 1 test from TVControllerTest (0 ms total)
+[       OK ] TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.PressMultipleDigitsAndConfirmShouldChangeChannel" time elapsed: 00:00:00
+"TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.OneDigitAndOkChangesToChannelOne" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/20 Testing: TVControllerTest.S1_3_ContinuousInput
-9/20 Test: TVControllerTest.S1_3_ContinuousInput
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_3_ContinuousInput" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.S1_3_ContinuousInput" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+15/36 Testing: TVControllerChannelChangeTest.TwoDigitsChangeImmediately
+15/36 Test: TVControllerChannelChangeTest.TwoDigitsChangeImmediately
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.TwoDigitsChangeImmediately" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.TwoDigitsChangeImmediately" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.S1_3_ContinuousInput
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.TwoDigitsChangeImmediately
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.S1_3_ContinuousInput
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.TwoDigitsChangeImmediately
+현재 설정하는 채널 : 12
+[       OK ] TVControllerChannelChangeTest.TwoDigitsChangeImmediately (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerChannelChangeTest.TwoDigitsChangeImmediately" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.TwoDigitsChangeImmediately" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/36 Testing: TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing
+16/36 Test: TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing
+현재 설정하는 채널 : 12
+[       OK ] TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.OkAfterTwoDigitAutoChangeDoesNothing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/36 Testing: TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits
+17/36 Test: TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits
 현재 설정하는 채널 : 12
 현재 설정하는 채널 : 34
-[       OK ] TVControllerTest.S1_3_ContinuousInput (0 ms)
-[----------] 1 test from TVControllerTest (0 ms total)
+[       OK ] TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerTest.S1_3_ContinuousInput" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.S1_3_ContinuousInput" time elapsed: 00:00:00
+"TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.ContinuousDigitsChangeEveryTwoDigits" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/20 Testing: TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
-10/20 Test: TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+18/36 Testing: TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput
+18/36 Test: TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput
+[       OK ] TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.MenuCancelsPendingOneDigitInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/36 Testing: TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit
+19/36 Test: TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit
 현재 설정하는 채널 : 45
-[       OK ] TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange (0 ms)
-[----------] 1 test from TVControllerTest (0 ms total)
+[       OK ] TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.S1_4_InvalidateOnlyLastDigitAfterAutoChange" time elapsed: 00:00:00
+"TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.MenuCancelsOnlyUncommittedDigit" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/20 Testing: TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
-11/20 Test: TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+20/36 Testing: TVControllerChannelChangeTest.LeadingZeroIsNormalized
+20/36 Test: TVControllerChannelChangeTest.LeadingZeroIsNormalized
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.LeadingZeroIsNormalized" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.LeadingZeroIsNormalized" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.LeadingZeroIsNormalized
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.S1_5_LeadingZeroShouldBeRemoved
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.LeadingZeroIsNormalized
 현재 설정하는 채널 : 7
-[       OK ] TVControllerTest.S1_5_LeadingZeroShouldBeRemoved (0 ms)
-[----------] 1 test from TVControllerTest (0 ms total)
+[       OK ] TVControllerChannelChangeTest.LeadingZeroIsNormalized (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.S1_5_LeadingZeroShouldBeRemoved" time elapsed: 00:00:00
+"TVControllerChannelChangeTest.LeadingZeroIsNormalized" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.LeadingZeroIsNormalized" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/20 Testing: TVControllerTest.ZZZ_FinalApprovalVerification
-12/20 Test: TVControllerTest.ZZZ_FinalApprovalVerification
-Command: "C:/DEV_BR/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerTest.ZZZ_FinalApprovalVerification" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"TVControllerTest.ZZZ_FinalApprovalVerification" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+21/36 Testing: TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros
+21/36 Test: TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = TVControllerTest.ZZZ_FinalApprovalVerification
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from TVControllerTest
-[ RUN      ] TVControllerTest.ZZZ_FinalApprovalVerification
-[       OK ] TVControllerTest.ZZZ_FinalApprovalVerification (0 ms)
-[----------] 1 test from TVControllerTest (0 ms total)
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros
+현재 설정하는 채널 : 0
+[       OK ] TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerTest.ZZZ_FinalApprovalVerification" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"TVControllerTest.ZZZ_FinalApprovalVerification" time elapsed: 00:00:00
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeSelectedByTwoZeros" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/20 Testing: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
-13/20 Test: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+22/36 Testing: TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk
+22/36 Test: TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk
+현재 설정하는 채널 : 0
+[       OK ] TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.LowerBoundaryZeroCanBeConfirmedByOk" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/36 Testing: TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected
+23/36 Test: TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerTest.exe" "--gtest_filter=TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerChannelChangeTest
+[ RUN      ] TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected
+현재 설정하는 채널 : 99
+[       OK ] TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected (0 ms)
+[----------] 1 test from TVControllerChannelChangeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected" end time: May 19 14:23 대한민국 표준시
+"TVControllerChannelChangeTest.UpperBoundaryNinetyNineCanBeSelected" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/36 Testing: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+24/36 Test: FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -350,21 +651,21 @@ Note: Google Test filter = FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S2_1_AddCurrentChannelToFavorites" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/20 Testing: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
-14/20 Test: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+25/36 Testing: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+25/36 Test: FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -377,21 +678,21 @@ Note: Google Test filter = FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExiste
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S2_2_ToggleFavoriteRemoveIfExisted" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/20 Testing: FavoriteChannelTest.S2_3_ComplexSequenceTest
-15/20 Test: FavoriteChannelTest.S2_3_ComplexSequenceTest
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_3_ComplexSequenceTest" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S2_3_ComplexSequenceTest" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+26/36 Testing: FavoriteChannelTest.S2_3_ComplexSequenceTest
+26/36 Test: FavoriteChannelTest.S2_3_ComplexSequenceTest
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_3_ComplexSequenceTest" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_3_ComplexSequenceTest" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S2_3_ComplexSequenceTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -404,21 +705,102 @@ Note: Google Test filter = FavoriteChannelTest.S2_3_ComplexSequenceTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S2_3_ComplexSequenceTest" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S2_3_ComplexSequenceTest" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S2_3_ComplexSequenceTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/20 Testing: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
-16/20 Test: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+27/36 Testing: FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion
+27/36 Test: FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion
+[       OK ] FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion" end time: May 19 14:23 대한민국 표준시
+"FavoriteChannelTest.S2_4_FavoritesRemainSortedAfterReverseInsertion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/36 Testing: FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites
+28/36 Test: FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites
+[       OK ] FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites" end time: May 19 14:23 대한민국 표준시
+"FavoriteChannelTest.S2_5_BoundaryChannelsCanBeFavorites" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/36 Testing: FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted
+29/36 Test: FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted
+[       OK ] FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted" end time: May 19 14:23 대한민국 표준시
+"FavoriteChannelTest.S2_6_RemovingOneFavoriteKeepsOthersSorted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/36 Testing: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+30/36 Test: FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -431,21 +813,21 @@ Note: Google Test filter = FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S3_1_NextFavoriteChannel_Normal" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/20 Testing: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
-17/20 Test: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+31/36 Testing: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+31/36 Test: FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -458,21 +840,21 @@ Note: Google Test filter = FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S3_2_NextFavoriteChannel_NoChange" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/20 Testing: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
-18/20 Test: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+32/36 Testing: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+32/36 Test: FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -485,21 +867,21 @@ Note: Google Test filter = FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapArou
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S3_3_NextFavoriteChannel_WrapAround" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/20 Testing: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
-19/20 Test: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+33/36 Testing: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+33/36 Test: FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -512,38 +894,92 @@ Note: Google Test filter = FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenList
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
+"FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" end time: May 19 14:23 대한민국 표준시
 "FavoriteChannelTest.S3_4_NextFavoriteChannel_WhenListIsEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/20 Testing: FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification
-20/20 Test: FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification
-Command: "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV_BR/TDD_TV_06/build
-"FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification" start time: May 17 15:55 ���ѹα� ǥ�ؽ�
+34/36 Testing: FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst
+34/36 Test: FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst" start time: May 19 14:23 대한민국 표준시
 Output:
 ----------------------------------------------------------
-Running main() from C:\DEV_BR\TDD_TV_06\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 1 test from FavoriteChannelTest
-[ RUN      ] FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification
-[       OK ] FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification (0 ms)
+[ RUN      ] FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst
+[       OK ] FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst (0 ms)
 [----------] 1 test from FavoriteChannelTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification" end time: May 17 15:55 ���ѹα� ǥ�ؽ�
-"FavoriteChannelTest.ZZZ_FinalFavoriteChannelApprovalVerification" time elapsed: 00:00:00
+"FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst" end time: May 19 14:23 대한민국 표준시
+"FavoriteChannelTest.S3_5_NextFavoriteFromValueBelowAllMovesToFirst" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 17 15:55 ���ѹα� ǥ�ؽ�
+35/36 Testing: FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel
+35/36 Test: FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel
+Command: "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest.exe" "--gtest_filter=FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FavoriteChannelTest
+[ RUN      ] FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel
+[       OK ] FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel (0 ms)
+[----------] 1 test from FavoriteChannelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel" end time: May 19 14:23 대한민국 표준시
+"FavoriteChannelTest.S3_6_NextFavoriteFromGapMovesToUpperChannel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/36 Testing: TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios
+36/36 Test: TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios
+Command: "C:/Users/jyk17/TDD_TV_06/build/TVControllerGoldenMasterTest.exe" "--gtest_filter=TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/jyk17/TDD_TV_06/build
+"TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios" start time: May 19 14:23 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TVControllerGoldenMasterTextTestFixture
+[ RUN      ] TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios
+[       OK ] TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios (4 ms)
+[----------] 1 test from TVControllerGoldenMasterTextTestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios" end time: May 19 14:23 대한민국 표준시
+"TVControllerGoldenMasterTextTestFixture.should_match_approved_text_output_when_replaying_characterization_scenarios" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 19 14:23 대한민국 표준시

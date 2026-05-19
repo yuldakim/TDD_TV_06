@@ -1,10 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/DEV_BR/TDD_TV_06/build/cmake_install.cmake",
-		"C:/DEV_BR/TDD_TV_06/build/_deps/googletest-build/cmake_install.cmake",
-		"C:/DEV_BR/TDD_TV_06/build/_deps/googletest-build/googlemock/cmake_install.cmake",
-		"C:/DEV_BR/TDD_TV_06/build/_deps/googletest-build/googletest/cmake_install.cmake"
+		"C:/Users/jyk17/TDD_TV_06/build/cmake_install.cmake",
+		"C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-build/cmake_install.cmake",
+		"C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-build/googletest/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

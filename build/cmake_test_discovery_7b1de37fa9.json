@@ -1,50 +1,70 @@
 {
-  "tests": 8,
+  "tests": 12,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "FavoriteChannelTest",
-      "tests": 8,
+      "tests": 12,
       "testsuite": [
         {
           "name": "S2_1_AddCurrentChannelToFavorites",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 48
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 35
         },
         {
           "name": "S2_2_ToggleFavoriteRemoveIfExisted",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 62
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 47
         },
         {
           "name": "S2_3_ComplexSequenceTest",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 73
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 59
+        },
+        {
+          "name": "S2_4_FavoritesRemainSortedAfterReverseInsertion",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 70
+        },
+        {
+          "name": "S2_5_BoundaryChannelsCanBeFavorites",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 81
+        },
+        {
+          "name": "S2_6_RemovingOneFavoriteKeepsOthersSorted",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 92
         },
         {
           "name": "S3_1_NextFavoriteChannel_Normal",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 94
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 104
         },
         {
           "name": "S3_2_NextFavoriteChannel_NoChange",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 112
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 117
         },
         {
           "name": "S3_3_NextFavoriteChannel_WrapAround",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 123
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 129
         },
         {
           "name": "S3_4_NextFavoriteChannel_WhenListIsEmpty",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 141
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 142
         },
         {
-          "name": "ZZZ_FinalFavoriteChannelApprovalVerification",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\FavoriteChannelTest.cpp",
-          "line": 150
+          "name": "S3_5_NextFavoriteFromValueBelowAllMovesToFirst",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 154
+        },
+        {
+          "name": "S3_6_NextFavoriteFromGapMovesToUpperChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/FavoriteChannelTest.cpp",
+          "line": 167
         }
       ]
     }

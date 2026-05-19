@@ -1,5 +1,5 @@
-if(EXISTS "C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake")
-  include("C:/DEV_BR/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake")
+if(EXISTS "C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake")
+  include("C:/Users/jyk17/TDD_TV_06/build/FavoriteChannelTest[1]_tests.cmake")
 else()
   add_test(FavoriteChannelTest_NOT_BUILT FavoriteChannelTest_NOT_BUILT)
 endif()

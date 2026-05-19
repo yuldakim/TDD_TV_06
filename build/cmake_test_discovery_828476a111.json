@@ -1,40 +1,75 @@
 {
-  "tests": 6,
+  "tests": 13,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TunerFakeTest",
-      "tests": 6,
+      "tests": 13,
       "testsuite": [
         {
-          "name": "initChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 57
+          "name": "SearchMovesFromInitialChannelToNextAvailableChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 33
         },
         {
-          "name": "testSetChForValidChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 63
+          "name": "SearchCanBeRepeatedAndChangesChannelEachTime",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 45
         },
         {
-          "name": "testSetChForInvalidChannel",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
+          "name": "SearchWrapsAfterUpperBoundary",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 60
+        },
+        {
+          "name": "SearchResultAlwaysStaysWithinChannelBoundary",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
           "line": 72
         },
         {
-          "name": "testSeekCh10times",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 80
+          "name": "SearchAfterExplicitChannelChangeUsesCurrentChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 83
         },
         {
-          "name": "testSeekCh10timesAfterSetCH",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 98
+          "name": "GetCurrentChannelReturnsInitialChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 95
         },
         {
-          "name": "ZZZ_FinalTunerApprovalVerification",
-          "file": "C:\\DEV_BR\\TDD_TV_06\\test\\TunerTest.cpp",
-          "line": 114
+          "name": "GetCurrentChannelReturnsLowerBoundaryAfterSet",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 106
+        },
+        {
+          "name": "GetCurrentChannelReturnsUpperBoundaryAfterSet",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 117
+        },
+        {
+          "name": "GetCurrentChannelReflectsLastValidSetChannel",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 128
+        },
+        {
+          "name": "GetCurrentChannelIsUnchangedAfterInvalidSetFails",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 141
+        },
+        {
+          "name": "InvalidChannelBelowLowerBoundaryIsRejected",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 152
+        },
+        {
+          "name": "InvalidChannelAboveUpperBoundaryIsRejected",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 163
+        },
+        {
+          "name": "ValidChannelsCanBeSetAndQueriedIndividually",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TunerTest.cpp",
+          "line": 174
         }
       ]
     }

@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TVControllerGoldenMasterTextTestFixture",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "should_match_approved_text_output_when_replaying_characterization_scenarios",
+          "file": "C:\/Users\/jyk17\/TDD_TV_06\/test\/TVControllerGoldenMasterTest.cpp",
+          "line": 205
+        }
+      ]
+    }
+  ]
+}

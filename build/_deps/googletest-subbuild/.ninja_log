@@ -1,0 +1,21 @@
+# ninja log v7
+2	124	8008694413614881	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	472ef2d12123c714
+2	124	8008694413614881	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	472ef2d12123c714
+125	1429	8008694426657665	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	11e0dddac316e51e
+125	1429	8008694426657665	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	11e0dddac316e51e
+1430	1550	8008694427878538	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	41598f099d81789a
+1430	1550	8008694427878538	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	41598f099d81789a
+1550	1671	8008694429079743	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	c9195ae6873cd108
+1550	1671	8008694429079743	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	c9195ae6873cd108
+1671	1786	8008694430248268	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	3c7343612845f79c
+1671	1786	8008694430248268	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	3c7343612845f79c
+1786	1899	8008694431357286	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	7af88dbd9c0701ae
+1786	1899	8008694431357286	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	7af88dbd9c0701ae
+1899	2015	8008694432537630	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	b9adeeb102f0a869
+1899	2015	8008694432537630	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	b9adeeb102f0a869
+2016	2131	8008694433698187	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	a2d9a44503e8bbc4
+2016	2131	8008694433698187	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	a2d9a44503e8bbc4
+2132	2298	8008694435349044	CMakeFiles/googletest-populate-complete	7c4fcdfc4ece21cf
+2132	2298	8008694435349044	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	7c4fcdfc4ece21cf
+2132	2298	8008694435349044	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	7c4fcdfc4ece21cf
+2132	2298	8008694435349044	C:/Users/jyk17/TDD_TV_06/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	7c4fcdfc4ece21cf
